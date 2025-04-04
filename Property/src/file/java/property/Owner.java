@@ -7,7 +7,6 @@ public class Owner {
         this.name = name;
         this.contact = contact;
     }
-
     public void display() {
         System.out.println("Owner Name: " + name + ", Contact: " + contact);
     }
