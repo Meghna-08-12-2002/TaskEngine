@@ -3,7 +3,6 @@ package file.java.property;
 public class Owner {
     String name;
     String contact;
-
     public Owner(String name, String contact) {
         this.name = name;
         this.contact = contact;
