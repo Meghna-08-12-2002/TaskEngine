@@ -10,11 +10,9 @@ public class GreenLeaf extends Leaf {
         System.out.println("Green leaf gently falls to the ground");
     }
 
-    public void photosynthesis(Leaf leaf) {
-        if (leaf != null) {
+    public void photosynthesis() {
+
             System.out.println("Green leaf is performing photosynthesis");
-        } else {
-            System.out.println("Leaf is null, cannot perform photosynthesis");
-        }
+
     }
 }

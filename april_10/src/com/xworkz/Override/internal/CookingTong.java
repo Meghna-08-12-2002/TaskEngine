@@ -10,11 +10,9 @@ public class CookingTong extends Tong {
         System.out.println("Gripping with a cooking tong");
     }
 
-    public void clean(Tong tong) {
-        if (tong != null) {
+    public void clean() {
+
             System.out.println("Cleaning the cooking tong");
-        } else {
-            System.out.println("Tong is null, cannot clean");
-        }
+
     }
 }

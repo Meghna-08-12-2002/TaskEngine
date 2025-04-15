@@ -10,11 +10,9 @@ public class IronRod extends Rod {
         System.out.println("Iron rod provides strong structural support");
     }
 
-    public void weld(Rod rod) {
-        if (rod != null) {
+    public void weld() {
+
             System.out.println("Welding the iron rod");
-        } else {
-            System.out.println("Rod is null, cannot weld");
-        }
+
     }
 }

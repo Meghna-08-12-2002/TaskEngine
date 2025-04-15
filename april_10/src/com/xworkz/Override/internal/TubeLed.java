@@ -10,11 +10,9 @@ public class TubeLed extends Led  {
         System.out.println("Glowing the tube led");
     }
 
-    public void adjustBrightness(Led led) {
-        if (led != null) {
+    public void adjustBrightness() {
+
             System.out.println("Adjusting brightness of the led");
-        } else {
-            System.out.println("Led is null, cannot adjust brightness");
-        }
+
     }
 }

@@ -10,11 +10,9 @@ public class CeramicFlagon extends Flagon {
         System.out.println("Holding a ceramic flagon");
     }
 
-    public void clean(Flagon flagon) {
-        if (flagon != null) {
+    public void clean() {
+
             System.out.println("Cleaning the ceramic flagon");
-        } else {
-            System.out.println("Flagon is null, cannot clean");
-        }
+
     }
 }

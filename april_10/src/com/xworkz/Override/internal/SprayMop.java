@@ -10,11 +10,9 @@ public class SprayMop extends Mop {
         System.out.println("Spray mop is cleaning the floor with liquid");
     }
 
-    public void sprayLiquid(Mop mop) {
-        if (mop != null) {
+    public void sprayLiquid() {
+
             System.out.println("Spraying liquid before mopping");
-        } else {
-            System.out.println("Mop is null, can't spray liquid");
-        }
+
     }
 }

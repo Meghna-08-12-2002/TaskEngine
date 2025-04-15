@@ -10,11 +10,9 @@ public class StudEarrings extends Earrings {
         System.out.println("Wearing stud earrings");
     }
 
-    public void clean(Earrings earrings) {
-        if (earrings != null) {
+    public void clean() {
+
             System.out.println("Cleaning the earrings");
-        } else {
-            System.out.println("Earrings object is null, can't clean");
-        }
+
     }
 }

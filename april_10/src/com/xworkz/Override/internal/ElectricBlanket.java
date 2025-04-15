@@ -10,11 +10,8 @@ public class ElectricBlanket extends Blanket {
         System.out.println("Covering with an electric blanket");
     }
 
-    public void heatUp(Blanket blanket) {
-        if (blanket != null) {
-            System.out.println("Heating the electric blanket");
-        } else {
-            System.out.println("Blanket is null, cannot heat");
-        }
+    public void heatUp() {
+        System.out.println("Heating the electric blanket");
+
     }
 }

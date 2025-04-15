@@ -10,11 +10,9 @@ public class SteelFork extends Fork {
         System.out.println("Picking food with a durable steel fork");
     }
 
-    public void polish(Fork fork) {
-        if (fork != null) {
+    public void polish() {
+
             System.out.println("Polishing the steel fork");
-        } else {
-            System.out.println("Fork is null, cannot polish");
-        }
+
     }
 }

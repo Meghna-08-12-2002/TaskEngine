@@ -10,11 +10,9 @@ public class BlackPepper extends Pepper {
         System.out.println("Adding spice with black pepper");
     }
 
-    public void enhanceTaste(Pepper pepper) {
-        if (pepper != null) {
+    public void enhanceTaste() {
+
             System.out.println("Enhancing taste with black pepper");
-        } else {
-            System.out.println("Pepper is null, cannot enhance taste");
-        }
+
     }
 }

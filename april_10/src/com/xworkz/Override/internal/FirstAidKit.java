@@ -10,11 +10,9 @@ public class FirstAidKit extends Kit {
         System.out.println("Opening the first aid kit with medical supplies");
     }
 
-    public void sanitize(Kit kit) {
-        if (kit != null) {
+    public void sanitize() {
+
             System.out.println("Sanitizing the first aid kit");
-        } else {
-            System.out.println("Kit is null, cannot sanitize");
-        }
+
     }
 }

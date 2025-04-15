@@ -10,11 +10,8 @@ public class SignalTraffic extends Traffic {
         System.out.println("Controlling traffic using signals");
     }
 
-    public void monitor(Traffic traffic) {
-        if (traffic != null) {
+    public void monitor() {
             System.out.println("Monitoring traffic flow");
-        } else {
-            System.out.println("No traffic object provided to monitor");
-        }
+
     }
 }

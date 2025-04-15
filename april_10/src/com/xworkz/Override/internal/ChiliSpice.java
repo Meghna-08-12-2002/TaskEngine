@@ -10,11 +10,9 @@ public class ChiliSpice extends Spice {
         System.out.println("Adding flavor with chili spice");
     }
 
-    public void addHeat(Spice spice) {
-        if (spice != null) {
+    public void addHeat() {
+
             System.out.println("Adding heat with chili spice");
-        } else {
-            System.out.println("Spice is null, cannot add heat");
-        }
+
     }
 }

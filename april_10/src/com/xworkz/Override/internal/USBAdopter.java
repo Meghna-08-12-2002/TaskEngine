@@ -10,11 +10,9 @@ public class USBAdopter extends Adopter {
         System.out.println("Connecting device using USB adopter");
     }
 
-    public void transfer(Adopter adopter) {
-        if (adopter != null) {
+    public void transfer() {
+
             System.out.println("Data transfer initiated through adopter");
-        } else {
-            System.out.println("Adopter is null, cannot transfer data");
-        }
+
     }
 }

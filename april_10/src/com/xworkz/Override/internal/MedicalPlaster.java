@@ -10,11 +10,9 @@ public class MedicalPlaster extends Plaster {
         System.out.println("Applying a medical plaster");
     }
 
-    public void adhere(Plaster plaster) {
-        if (plaster != null) {
+    public void adhere() {
+
             System.out.println("Medical plaster adheres properly to the surface");
-        } else {
-            System.out.println("No plaster available to adhere");
-        }
+
     }
 }

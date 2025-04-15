@@ -6,15 +6,14 @@ public class Medical extends Alovera{
     }
 
     @Override
-    public void apply() {
+    public void apply()
+    {
         System.out.println("Applying medicinal alovera gel");
     }
 
-    public void soothe(Alovera alovera) {
-        if (alovera != null) {
-            System.out.println("Soothe the skin using alovera gel");
-        } else {
-            System.out.println("No alovera available to soothe");
-        }
+    public void heal() {
+
+            System.out.println("Heal the skin using alovera gel");
+
     }
 }

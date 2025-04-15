@@ -10,11 +10,9 @@ public class VegetableChopper extends Chopper {
         System.out.println("Chopping vegetables with a vegetable chopper");
     }
 
-    public void dice(Chopper chopper) {
-        if (chopper != null) {
+    public void dice() {
+
             System.out.println("Dicing vegetables with the chopper");
-        } else {
-            System.out.println("Chopper is null, cannot dice vegetables");
-        }
+
     }
 }

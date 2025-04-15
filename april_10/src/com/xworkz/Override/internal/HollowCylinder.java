@@ -10,11 +10,9 @@ public class HollowCylinder extends Cylinder {
         System.out.println("Rotating the hollow cylinder");
     }
 
-    public void inspect(Cylinder cylinder) {
-        if (cylinder != null) {
+    public void inspect() {
+
             System.out.println("Inspecting the hollow cylinder");
-        } else {
-            System.out.println("Cylinder is null, cannot inspect");
-        }
+
     }
 }

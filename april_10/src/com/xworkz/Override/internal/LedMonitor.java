@@ -10,11 +10,9 @@ public class LedMonitor extends Monitor {
         System.out.println("Displaying content on LED monitor");
     }
 
-    public void adjustBrightness(Monitor monitor) {
-        if (monitor != null) {
+    public void adjustBrightness() {
+
             System.out.println("Adjusting brightness on the monitor");
-        } else {
-            System.out.println("Monitor reference is null, cannot adjust brightness");
-        }
+
     }
 }

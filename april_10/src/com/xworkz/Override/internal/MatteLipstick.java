@@ -10,11 +10,9 @@ public class MatteLipstick extends Lipstick {
         System.out.println("Applying matte lipstick");
     }
 
-    public void longLasting(Lipstick lipstick) {
-        if (lipstick != null) {
+    public void longLasting() {
+
             System.out.println("This lipstick lasts all day");
-        } else {
-            System.out.println("Lipstick is null, can't check longevity");
-        }
+
     }
 }

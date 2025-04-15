@@ -6,11 +6,6 @@ public class Gecko extends Lizard {
     }
 
     @Override
-    public void move() {
-        System.out.println("Gecko is climbing walls");
-    }
-
-    @Override
     public void makeSound() {
         System.out.println("Gecko makes a chirping sound");
     }

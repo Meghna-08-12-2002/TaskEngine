@@ -10,11 +10,9 @@ public class DrySkin extends Skin {
         System.out.println("Dry skin needs extra care for protection");
     }
 
-    public void moisturize(Skin skin) {
-        if (skin != null) {
+    public void moisturize() {
+
             System.out.println("Moisturizing the skin");
-        } else {
-            System.out.println("Skin object is null, cannot moisturize");
-        }
+
     }
 }

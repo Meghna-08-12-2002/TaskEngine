@@ -10,12 +10,9 @@ public class PotatoMasher extends Masher {
         System.out.println("Mashing potatoes with the potato masher");
     }
 
-    public void mashWithStyle(Masher masher) {
-        if (masher != null) {
-            System.out.println("Mashing potatoes with style using the potato masher");
-        } else {
-            System.out.println("Masher is null, cannot mash");
-        }
+    public void mashWithStyle() {
+
+        System.out.println("Mashing potatoes with style using the potato masher");
     }
 
 }

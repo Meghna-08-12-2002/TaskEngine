@@ -7,14 +7,13 @@ public class FashionDoll extends Doll{
 
     @Override
     public void show() {
+
         System.out.println("Showing a fashion doll");
     }
 
-    public void accessorize(Doll doll) {
-        if (doll != null) {
+    public void accessorize() {
+
             System.out.println("Accessorizing doll with style");
-        } else {
-            System.out.println("Cannot accessorize, doll is missing");
-        }
+
     }
 }

@@ -10,11 +10,9 @@ public class GlassJar extends Jar {
         System.out.println("Storing items in the glass jar");
     }
 
-    public void preserve(Jar jar) {
-        if (jar != null) {
+    public void preserve() {
+
             System.out.println("Preserving items in the glass jar");
-        } else {
-            System.out.println("Jar is null, cannot preserve items");
-        }
+
     }
 }

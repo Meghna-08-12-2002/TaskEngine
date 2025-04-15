@@ -10,11 +10,9 @@ public class ManicureNail extends Nail {
         System.out.println("Filing the manicure nail");
     }
 
-    public void polish(Nail nail) {
-        if(nail != null) {
+    public void polish() {
+
             System.out.println("Polishing the nail to perfection");
-        } else {
-            System.out.println("No nail available for polishing");
-        }
+
     }
 }

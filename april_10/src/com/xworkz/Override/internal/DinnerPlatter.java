@@ -10,11 +10,9 @@ public class DinnerPlatter extends Platter {
         System.out.println("Serving food on a dinner platter");
     }
 
-    public void arrange(Platter platter) {
-        if (platter != null) {
+    public void arrange() {
+
             System.out.println("Arranging food on the platter");
-        } else {
-            System.out.println("Platter is null, cannot arrange food");
-        }
+
     }
 }

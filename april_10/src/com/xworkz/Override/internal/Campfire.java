@@ -10,11 +10,9 @@ public class Campfire extends Fire {
         System.out.println("Igniting a campfire");
     }
 
-    public void warmUp(Fire fire) {
-        if (fire != null) {
+    public void warmUp() {
+
             System.out.println("Warming up by the campfire");
-        } else {
-            System.out.println("Fire is null, cannot warm up");
-        }
+
     }
 }

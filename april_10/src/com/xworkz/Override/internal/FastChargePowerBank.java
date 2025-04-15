@@ -10,11 +10,9 @@ public class FastChargePowerBank extends PowerBank {
         System.out.println("Charging device with fast-charge power bank");
     }
 
-    public void boost(PowerBank powerBank) {
-        if (powerBank != null) {
+    public void boost() {
+
             System.out.println("Boost mode activated for power bank");
-        } else {
-            System.out.println("PowerBank is null, cannot activate boost mode");
-        }
+
     }
 }

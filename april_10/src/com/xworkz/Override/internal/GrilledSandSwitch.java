@@ -10,11 +10,8 @@ public class GrilledSandSwitch extends SandSwitch {
         System.out.println("Serving a grilled sandwich");
     }
 
-    public void toast(SandSwitch sandwich) {
-        if (sandwich != null) {
-            System.out.println("Toasting the sandwich");
-        } else {
-            System.out.println("Cannot toast, sandwich is null");
-        }
+    public void toast() {
+
+        System.out.println("Toasting the sandwich");
     }
 }

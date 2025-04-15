@@ -10,11 +10,9 @@ public class TreeFrog extends Frog {
         System.out.println("Tree frog is jumping from tree to tree");
     }
 
-    public void croak(Frog frog) {
-        if (frog != null) {
+    public void croak() {
+
             System.out.println("Tree frog is croaking");
-        } else {
-            System.out.println("Frog is null, cannot croak");
-        }
+
     }
 }

@@ -6,12 +6,7 @@ public class FlowerGarden extends Garden {
     }
 
     @Override
-    public void plant() {
-        System.out.println("Planting flowers in the garden");
-    }
-
-    @Override
-    public void water() {
+    public void Water() {
         System.out.println("Watering flowers in the flower garden");
     }
 

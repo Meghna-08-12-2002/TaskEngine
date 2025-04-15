@@ -1,5 +1,6 @@
 package com.xworkz.Override.runner;
 
+import com.xworkz.Override.external.*;
 import com.xworkz.Override.internal.*;
 
 public class Main {
@@ -12,9 +13,14 @@ public class Main {
         System.out.println("--------------------------");
         Circle circleRef = new Circle();
         circleRef.draw();
-        circleRef.rotate(shapeRef);
-        circleRef.rotate(null);
+        System.out.println("--------------------------");
+        Rectangle rectangle = new Rectangle();
+        rectangle.Tringle(shapeRef);
+        rectangle.Tringle(shapeCircle);
+        rectangle.Tringle(circleRef);
         System.out.println("==========================");
+
+
 
         Doll plainDoll = new Doll();
         plainDoll.show();
@@ -24,9 +30,14 @@ public class Main {
         System.out.println("--------------------------");
         FashionDoll fancyDoll = new FashionDoll();
         fancyDoll.show();
-        fancyDoll.accessorize(plainDoll);
-        fancyDoll.accessorize(null);
+        System.out.println("--------------------------");
+        BarbieDoll barbie = new BarbieDoll();
+        barbie.decorate(plainDoll);
+        barbie.decorate(polyDoll);
+        barbie.decorate(fancyDoll);
         System.out.println("==========================");
+
+
 
         Alovera basicAlovera = new Alovera();
         basicAlovera.apply();
@@ -36,9 +47,14 @@ public class Main {
         System.out.println("--------------------------");
         Medical medAlovera = new Medical();
         medAlovera.apply();
-        medAlovera.soothe(basicAlovera);
-        medAlovera.soothe(null);
+        System.out.println("--------------------------");
+        NaturalAlovera natural1 = new NaturalAlovera();
+        natural1.treat(basicAlovera);
+        natural1.treat(polyAlovera);
+        natural1.treat(medAlovera);
         System.out.println("==========================");
+
+
 
         Pin basicPin = new Pin();
         basicPin.use();
@@ -48,9 +64,13 @@ public class Main {
         System.out.println("--------------------------");
         SafetyPin safetyPin = new SafetyPin();
         safetyPin.use();
-        safetyPin.lock(basicPin);
-        safetyPin.lock(null);
+        System.out.println("--------------------------");
+        SteelPin steel = new SteelPin();
+        steel.secure(basicPin);
+        steel.secure(polyPin);
+        steel.secure(safetyPin);
         System.out.println("==========================");
+
 
         Plaster basicPlaster = new Plaster();
         basicPlaster.apply();
@@ -60,9 +80,13 @@ public class Main {
         System.out.println("-------------------------");
         MedicalPlaster medPlaster = new MedicalPlaster();
         medPlaster.apply();
-        medPlaster.adhere(basicPlaster);
-        medPlaster.adhere(null);
+        System.out.println("-------------------------");
+        BandagePlaster bandage = new BandagePlaster();
+        bandage.fix(basicPlaster);
+        bandage.fix(polyPlaster);
+        bandage.fix(medPlaster);
         System.out.println("===========================");
+
 
         Sticker basicSticker = new Sticker();
         basicSticker.stick();
@@ -72,9 +96,13 @@ public class Main {
         System.out.println("-------------------------");
         FancySticker fancySticker = new FancySticker();
         fancySticker.stick();
-        fancySticker.reposition(basicSticker);
-        fancySticker.reposition(null);
+        System.out.println("-------------------------");
+        StickerTester tester = new StickerTester();
+        tester.testSticker(basicSticker);
+        tester.testSticker(polySticker);
+        tester.testSticker(fancySticker);
         System.out.println("===========================");
+
 
         Finger basicFinger = new Finger();
         basicFinger.flex();
@@ -84,8 +112,11 @@ public class Main {
         System.out.println("--------------------------");
         RingFinger ringFinger = new RingFinger();
         ringFinger.flex();
-        ringFinger.wearRing(basicFinger);
-        ringFinger.wearRing(null);
+        System.out.println("--------------------------");
+        FingerTester tester1 = new FingerTester();
+        tester1.testFlex(basicFinger);
+        tester1.testFlex(polyFinger);
+        tester1.testFlex(ringFinger);
         System.out.println("==========================");
 
         Nail basicNail = new Nail();
@@ -96,8 +127,11 @@ public class Main {
         System.out.println("--------------------------");
         ManicureNail manicureNail = new ManicureNail();
         manicureNail.file();
-        manicureNail.polish(basicNail);
-        manicureNail.polish(null);
+        System.out.println("--------------------------");
+        Salon salon = new Salon();
+        salon.beautify(basicNail);
+        salon.beautify(polyNail);
+        salon.beautify(manicureNail);
         System.out.println("==========================");
 
         Fevikwik normal = new Fevikwik();
@@ -108,8 +142,11 @@ public class Main {
         System.out.println("--------------------------");
         InstantFevikwik fast = new InstantFevikwik();
         fast.open();
-        fast.glue(normal);
-        fast.glue(null);
+        System.out.println("--------------------------");
+        FevikwikUse use = new FevikwikUse();
+        use.useFevikwik(normal);
+        use.useFevikwik(bond);
+        use.useFevikwik(fast);
         System.out.println("==========================");
 
         Led led = new Led();
@@ -120,8 +157,11 @@ public class Main {
         System.out.println("--------------------------");
         TubeLed tube = new TubeLed();
         tube.glow();
-        tube.adjustBrightness(led);
-        tube.adjustBrightness(null);
+        System.out.println("--------------------------");
+        LightOperator operator = new LightOperator();
+        operator.operate(led);
+        operator.operate(ledRef);
+        operator.operate(tube);
         System.out.println("==========================");
 
         Neck neck = new Neck();
@@ -132,8 +172,11 @@ public class Main {
         System.out.println("--------------------------");
         StiffNeck stiff = new StiffNeck();
         stiff.bend();
-        stiff.massage(neck);
-        stiff.massage(null);
+        System.out.println("--------------------------");
+        NeckTherapist therapist = new NeckTherapist();
+        therapist.treat(neck);
+        therapist.treat(stiffRef);
+        therapist.treat(stiff);
         System.out.println("==========================");
 
         Earrings earrings = new Earrings();
@@ -144,8 +187,11 @@ public class Main {
         System.out.println("--------------------------");
         StudEarrings studs = new StudEarrings();
         studs.wear();
-        studs.clean(earrings);
-        studs.clean(null);
+        System.out.println("--------------------------");
+        Jeweller jeweller = new Jeweller();
+        jeweller.polish(earrings);
+        jeweller.polish(ref);
+        jeweller.polish(studs);
         System.out.println("==========================");
 
         Blush blush = new Blush();
@@ -156,8 +202,11 @@ public class Main {
         System.out.println("--------------------------");
         CreamBlush creamy = new CreamBlush();
         creamy.apply();
-        creamy.blend(blush);
-        creamy.blend(null);
+        System.out.println("--------------------------");
+        MakeupArtist artist = new MakeupArtist();
+        artist.style(blush);
+        artist.style(soft);
+        artist.style(creamy);
         System.out.println("==========================");
 
         Eyeliner basic = new Eyeliner();
@@ -168,8 +217,11 @@ public class Main {
         System.out.println("--------------------------");
         LiquidEyeliner smooth = new LiquidEyeliner();
         smooth.draw();
-        smooth.waterproof(basic);
-        smooth.waterproof(null);
+        System.out.println("--------------------------");
+        BeautyExpert expert = new BeautyExpert();
+        expert.apply(basic);
+        expert.apply(liquidRef);
+        expert.apply(smooth);
         System.out.println("==========================");
 
         Lipstick classic = new Lipstick();
@@ -180,8 +232,11 @@ public class Main {
         System.out.println("--------------------------");
         MatteLipstick bold = new MatteLipstick();
         bold.apply();
-        bold.longLasting(classic);
-        bold.longLasting(null);
+        System.out.println("--------------------------");
+        BeautySpecialist specialist = new BeautySpecialist();
+        specialist.apply(classic);
+        specialist.apply(matteRef);
+        specialist.apply(bold);
         System.out.println("==========================");
 
         Keyboard standard = new Keyboard();
@@ -192,8 +247,11 @@ public class Main {
         System.out.println("--------------------------");
         MechanicalKeyboard mech = new MechanicalKeyboard();
         mech.type();
-        mech.backlight(standard);
-        mech.backlight(null);
+        System.out.println("--------------------------");
+        TechEnthusiast enthusiast = new TechEnthusiast();
+        enthusiast.useKeyboard(standard);
+        enthusiast.useKeyboard(mechRef);
+        enthusiast.useKeyboard(mech);
         System.out.println("==========================");
 
         Mouse mouse = new Mouse();
@@ -204,8 +262,11 @@ public class Main {
         System.out.println("--------------------------");
         WirelessMouse wireless = new WirelessMouse();
         wireless.click();
-        wireless.connect(mouse);
-        wireless.connect(null);
+        System.out.println("--------------------------");
+        GadgetUser user = new GadgetUser();
+        user.operate(mouse);
+        user.operate(wirelessRef);
+        user.operate(wireless);
         System.out.println("==========================");
 
         Curd plain = new Curd();
@@ -216,8 +277,11 @@ public class Main {
         System.out.println("--------------------------");
         FlavoredCurd sweet = new FlavoredCurd();
         sweet.eat();
-        sweet.chill(plain);
-        sweet.chill(null);
+        System.out.println("--------------------------");
+        CurdEnthusiast lover = new CurdEnthusiast();
+        lover.enjoy(plain);
+        lover.enjoy(flavoredRef);
+        lover.enjoy(sweet);
         System.out.println("==========================");
 
         Traffic general = new Traffic();
@@ -228,8 +292,11 @@ public class Main {
         System.out.println("--------------------------");
         SignalTraffic signal = new SignalTraffic();
         signal.control();
-        signal.monitor(general);
-        signal.monitor(null);
+        System.out.println("--------------------------");
+        TrafficPolice police = new TrafficPolice();
+        police.manage(general);
+        police.manage(signalRef);
+        police.manage(signal);
         System.out.println("==========================");
 
         Foot regular = new Foot();
@@ -240,8 +307,11 @@ public class Main {
         System.out.println("--------------------------");
         BareFoot bare = new BareFoot();
         bare.move();
-        bare.feel(regular);
-        bare.feel(null);
+        System.out.println("--------------------------");
+        TrafficPolice police1 = new TrafficPolice();
+        police1.manage(general);
+        police1.manage(signalRef);
+        police1.manage(signal);
         System.out.println("==========================");
 
         Leaf leaf = new Leaf();
@@ -252,8 +322,11 @@ public class Main {
         System.out.println("--------------------------");
         GreenLeaf green = new GreenLeaf();
         green.fall();
-        green.photosynthesis(leaf);
-        green.photosynthesis(null);
+        System.out.println("--------------------------");
+        Botanist botanist = new Botanist();
+        botanist.observe(leaf);
+        botanist.observe(greenRef);
+        botanist.observe(green);
         System.out.println("==========================");
 
         Candle candle = new Candle();
@@ -264,8 +337,11 @@ public class Main {
         System.out.println("--------------------------");
         ScentedCandle scented = new ScentedCandle();
         scented.light();
-        scented.releaseFragrance(candle);
-        scented.releaseFragrance(null);
+        System.out.println("--------------------------");
+        InteriorDesigner designer = new InteriorDesigner();
+        designer.decorate(candle);
+        designer.decorate(scentedRef);
+        designer.decorate(scented);
         System.out.println("==========================");
 
         Mop mop1 = new Mop();
@@ -276,8 +352,11 @@ public class Main {
         System.out.println("--------------------------");
         SprayMop mop3 = new SprayMop();
         mop3.clean();
-        mop3.sprayLiquid(mop1);
-        mop3.sprayLiquid(null);
+        System.out.println("--------------------------");
+        Housekeeper keeper = new Housekeeper();
+        keeper.startCleaning(mop1);
+        keeper.startCleaning(mop2);
+        keeper.startCleaning(mop3);
         System.out.println("==========================");
 
         Park park1 = new Park();
@@ -288,32 +367,41 @@ public class Main {
         System.out.println("--------------------------");
         ThemePark park3 = new ThemePark();
         park3.open();
-        park3.launchRide(park1);
-        park3.launchRide(null);
+        System.out.println("--------------------------");
+        Visitor visitor = new Visitor();
+        visitor.explore(park1);
+        visitor.explore(park2);
+        visitor.explore(park3);
         System.out.println("==========================");
 
-        Match m1 = new Match();
-        m1.start();
+        Match match = new Match();
+        match.start();
         System.out.println("--------------------------");
-        Match m2 = new CricketMatch();
-        m2.start();
+        Match matc = new CricketMatch();
+        matc.start();
         System.out.println("--------------------------");
-        CricketMatch m3 = new CricketMatch();
-        m3.start();
-        m3.toss(m1);
-        m3.toss(null);
+        CricketMatch mat = new CricketMatch();
+        mat.start();
+        System.out.println("--------------------------");
+        MatchManager manager = new MatchManager();
+        manager.manageMatch(match);
+        manager.manageMatch(matc);
+        manager.manageMatch(mat);
         System.out.println("==========================");
 
-        Elevator e1 = new Elevator();
-        e1.move();
+        Elevator elevator = new Elevator();
+        elevator.move();
         System.out.println("--------------------------");
-        Elevator e2 = new SmartElevator();
-        e2.move();
+        Elevator eleva = new SmartElevator();
+        eleva.move();
         System.out.println("--------------------------");
-        SmartElevator e3 = new SmartElevator();
-        e3.move();
-        e3.autoClose(e1);
-        e3.autoClose(null);
+        SmartElevator smart = new SmartElevator();
+        smart.move();
+        System.out.println("--------------------------");
+        ElevatorOperator operator1 = new ElevatorOperator();
+        operator1.operate(elevator);
+        operator1.operate(eleva);
+        operator1.operate(smart);
         System.out.println("==========================");
 
         Clock clock = new Clock();
@@ -324,8 +412,11 @@ public class Main {
         System.out.println("--------------------------");
         WallClock wall = new WallClock();
         wall.showTime();
-        wall.chime(clock);
-        wall.chime(null);
+        System.out.println("--------------------------");
+        Timekeeper timekeeper = new Timekeeper();
+        timekeeper.displayTime(clock);
+        timekeeper.displayTime(analog);
+        timekeeper.displayTime(wall);
         System.out.println("==========================");
 
         Container container = new Container();
@@ -336,8 +427,11 @@ public class Main {
         System.out.println("--------------------------");
         PlasticContainer specific = new PlasticContainer();
         specific.store();
-        specific.seal(container );
-        specific.seal(null);
+        System.out.println("--------------------------");
+        StorageManager storageManager = new StorageManager();
+        storageManager.manageStorage(container);
+        storageManager.manageStorage(plastic);
+        storageManager.manageStorage(specific);
         System.out.println("==========================");
 
         Flask flask = new Flask();
@@ -348,8 +442,11 @@ public class Main {
         System.out.println("--------------------------");
         SteelFlask hot = new SteelFlask();
         hot.carry();
-        hot.insulate(flask);
-        hot.insulate(null);
+        System.out.println("--------------------------");
+        FlaskManager flaskManager = new FlaskManager();
+        flaskManager.manageFlask(flask);
+        flaskManager.manageFlask(thermos);
+        flaskManager.manageFlask(hot);
         System.out.println("==========================");
 
         Hair generic = new Hair();
@@ -360,8 +457,11 @@ public class Main {
         System.out.println("--------------------------");
         CurlyHair natural = new CurlyHair();
         natural.style();
-        natural.moisturize(generic);
-        natural.moisturize(null);
+        System.out.println("--------------------------");
+        HairStylist stylist = new HairStylist();
+        stylist.styleHair(generic);
+        stylist.styleHair(curly);
+        stylist.styleHair(natural);
         System.out.println("==========================");
 
         Rod rod = new Rod();
@@ -372,8 +472,11 @@ public class Main {
         System.out.println("--------------------------");
         IronRod strong = new IronRod();
         strong.support();
-        strong.weld(rod);
-        strong.weld(null);
+        System.out.println("--------------------------");
+        RodHandler rodHandler = new RodHandler();
+        rodHandler.handle(rod);
+        rodHandler.handle(iron);
+        rodHandler.handle(strong);
         System.out.println("==========================");
 
         Oven oven = new Oven();
@@ -384,8 +487,11 @@ public class Main {
         System.out.println("--------------------------");
         MicrowaveOven mw = new MicrowaveOven();
         mw.heat();
-        mw.defrost(oven);
-        mw.defrost(null);
+        System.out.println("--------------------------");
+        OvenHandler ovenHandler = new OvenHandler();
+        ovenHandler.handle(oven);
+        ovenHandler.handle(quick);
+        ovenHandler.handle(mw);
         System.out.println("==========================");
 
         Fork fork = new Fork();
@@ -396,8 +502,11 @@ public class Main {
         System.out.println("--------------------------");
         SteelFork shiny = new SteelFork();
         shiny.pick();
-        shiny.polish(fork);
-        shiny.polish(null);
+        System.out.println("--------------------------");
+        ForkHandler forkHandler = new ForkHandler();
+        forkHandler.handle(fork);
+        forkHandler.handle(stainless);
+        forkHandler.handle(shiny);
         System.out.println("==========================");
 
         Kit kit = new Kit();
@@ -408,8 +517,11 @@ public class Main {
         System.out.println("--------------------------");
         FirstAidKit medical = new FirstAidKit();
         medical.open();
-        medical.sanitize(kit);
-        medical.sanitize(null);
+        System.out.println("--------------------------");
+        KitInspector inspector = new KitInspector();
+        inspector.inspect(kit);
+        inspector.inspect(aid);
+        inspector.inspect(medical);
         System.out.println("==========================");
 
         Spoon spoon = new Spoon();
@@ -420,8 +532,11 @@ public class Main {
         System.out.println("--------------------------");
         SilverSpoon shine = new SilverSpoon();
         shine.scoop();
-        shine.shine(spoon);
-        shine.shine(null);
+        System.out.println("--------------------------");
+        SpoonTester test = new SpoonTester();
+        test.test(spoon);
+        test.test(fancy);
+        test.test(shine);
         System.out.println("==========================");
 
         WaterCanal mainCanal = new WaterCanal();
@@ -432,20 +547,26 @@ public class Main {
         System.out.println("--------------------------");
         IrrigationCanal irrigation = new IrrigationCanal();
         irrigation.flow();
-        irrigation.clean(mainCanal);
-        irrigation.clean(null);
+        System.out.println("--------------------------");
+        CanalMonitor monitor = new CanalMonitor();
+        monitor.observe(mainCanal);
+        monitor.observe(branchCanal);
+        monitor.observe(irrigation);
         System.out.println("==========================");
 
         Straightner straightner = new Straightner();
         straightner.heat();
         System.out.println("--------------------------");
-        Straightner salon = new HairStraightner();
-        salon.heat();
+        Straightner salon1 = new HairStraightner();
+        salon1.heat();
         System.out.println("--------------------------");
         HairStraightner advanced = new HairStraightner();
         advanced.heat();
-        advanced.straighten(straightner);
-        advanced.straighten(null);
+        System.out.println("--------------------------");
+        SalonService saloon = new SalonService();
+        saloon.use(straightner);
+        saloon.use(salon1);
+        saloon.use(advanced);
         System.out.println("==========================");
 
         Moisturizer moisturizer = new Moisturizer();
@@ -456,8 +577,11 @@ public class Main {
         System.out.println("--------------------------");
         FaceMoisturizer faceCare = new FaceMoisturizer();
         faceCare.apply();
-        faceCare.hydrate(moisturizer);
-        faceCare.hydrate(null);
+        System.out.println("--------------------------");
+        MoisturizerHandler mHandler = new MoisturizerHandler();
+        mHandler.handle(moisturizer);
+        mHandler.handle(facial);
+        mHandler.handle(faceCare);
         System.out.println("==========================");
 
         Tent tent = new Tent();
@@ -468,8 +592,11 @@ public class Main {
         System.out.println("--------------------------");
         CampingTent hiking = new CampingTent();
         hiking.setUp();
-        hiking.pack(tent);
-        hiking.pack(null);
+        System.out.println("--------------------------");
+        TentHandler tHandler = new TentHandler();
+        tHandler.handle(tent);
+        tHandler.handle(travel);
+        tHandler.handle(hiking);
         System.out.println("==========================");
 
         Pendrive pendrive= new Pendrive();
@@ -480,8 +607,11 @@ public class Main {
         System.out.println("--------------------------");
         SandiskPendrive sandisk = new SandiskPendrive();
         sandisk.store();
-        sandisk.transfer(pendrive);
-        sandisk.transfer(null);
+        System.out.println("--------------------------");
+        PendriveHandler pHandler = new PendriveHandler();
+        pHandler.handle(pendrive);
+        pHandler.handle(pendrive1);
+        pHandler.handle(sandisk);
         System.out.println("==========================");
 
 
@@ -493,8 +623,11 @@ public class Main {
         System.out.println("--------------------------");
         HeavyStepler heavy = new HeavyStepler();
         heavy.bind();
-        heavy.reload(stepler);
-        heavy.reload(null);
+        System.out.println("--------------------------");
+        PaperBinder binder = new PaperBinder();
+        binder.bindPapers(stepler);
+        binder.bindPapers(industrial);
+        binder.bindPapers(heavy);
         System.out.println("==========================");
 
         Mic corded = new Mic();
@@ -505,8 +638,11 @@ public class Main {
         System.out.println("--------------------------");
         WirelessMic collarMic = new WirelessMic();
         collarMic.record();
-        collarMic.connect(corded);
-        collarMic.connect(null);
+        System.out.println("--------------------------");
+        AudioHandler handler = new AudioHandler();
+        handler.handleMic(corded);
+        handler.handleMic(bluetooth);
+        handler.handleMic(collarMic);
         System.out.println("==========================");
 
         PowerBank power = new PowerBank();
@@ -517,8 +653,11 @@ public class Main {
         System.out.println("--------------------------");
         FastChargePowerBank miPower = new FastChargePowerBank();
         miPower.charge();
-        miPower.boost(power);
-        miPower.boost(null);
+        System.out.println("--------------------------");
+        ChargingStation station = new ChargingStation();
+        station.chargeDevice(power);
+        station.chargeDevice(turbo);
+        station.chargeDevice(miPower);
         System.out.println("==========================");
 
         Adopter wallAdapter = new Adopter();
@@ -529,8 +668,11 @@ public class Main {
         System.out.println("--------------------------");
         USBAdopter fastAdapter = new USBAdopter();
         fastAdapter.connect();
-        fastAdapter.transfer(wallAdapter);
-        fastAdapter.transfer(null);
+        System.out.println("--------------------------");
+        connectAdapter demo = new connectAdapter();
+        demo.connect(wallAdapter);
+        demo.connect(usbTypeC);
+        demo.connect(fastAdapter);
         System.out.println("==========================");
 
         Charger wired = new Charger();
@@ -541,8 +683,11 @@ public class Main {
         System.out.println("--------------------------");
         WirelessCharger pixelStand = new WirelessCharger();
         pixelStand.supply();
-        pixelStand.detect(wired);
-        pixelStand.detect(null);
+        System.out.println("--------------------------");
+        ChargerHandler charge=new ChargerHandler();
+        charge.handleCharger(wired );
+        charge.handleCharger(charger);
+        charge.handleCharger(pixelStand );
         System.out.println("==========================");
 
         Skin skin = new Skin();
@@ -553,8 +698,11 @@ public class Main {
         System.out.println("--------------------------");
         DrySkin winterSkin = new DrySkin();
         winterSkin.protect();
-        winterSkin.moisturize(skin);
-        winterSkin.moisturize(null);
+        System.out.println("--------------------------");
+        SkinCare care=new SkinCare();
+        care.handleSkin(skin);
+        care.handleSkin(sensitive);
+        care.handleSkin(winterSkin);
         System.out.println("==========================");
 
         Mug ceramic = new Mug();
@@ -565,8 +713,11 @@ public class Main {
         System.out.println("--------------------------");
         CoffeeMug officeMug = new CoffeeMug();
         officeMug.hold();
-        officeMug.sip(ceramic);
-        officeMug.sip(null);
+        System.out.println("--------------------------");
+        MugType  type=new MugType();
+        type.handleMug(ceramic);
+        type.handleMug(branded);
+        type.handleMug(officeMug);
         System.out.println("==========================");
 
         SandSwitch sand = new SandSwitch();
@@ -577,20 +728,26 @@ public class Main {
         System.out.println("--------------------------");
         GrilledSandSwitch panini = new GrilledSandSwitch();
         panini.serve();
-        panini.toast(sand);
-        panini.toast(null);
+        System.out.println("--------------------------");
+        ServiceSandwitch sandwitch = new ServiceSandwitch();
+        sandwitch.serve(sand);
+        sandwitch.serve(grilled);
+        sandwitch.serve(panini);
         System.out.println("==========================");
 
-        Monitor monitor = new Monitor();
-        monitor.display();
+        Monitor monitor1 = new Monitor();
+        monitor1.display();
         System.out.println("--------------------------");
         Monitor slim = new LedMonitor();
         slim.display();
         System.out.println("--------------------------");
         LedMonitor dell = new LedMonitor();
         dell.display();
-        dell.adjustBrightness(monitor);
-        dell.adjustBrightness(null);
+        System.out.println("--------------------------");
+        MonitorService monitorService = new MonitorService();
+        monitorService.showMonitorDetails(monitor1);
+        monitorService.showMonitorDetails(slim);
+        monitorService.showMonitorDetails(dell);
         System.out.println("==========================");
 
         Scooty tvs = new Scooty();
@@ -601,8 +758,11 @@ public class Main {
         System.out.println("--------------------------");
         ElectricScooty ather = new ElectricScooty();
         ather.ride();
-        ather.charge(tvs);
-        ather.charge(null);
+        System.out.println("--------------------------");
+        PetrolScooty service = new PetrolScooty();
+        service.road(tvs);
+        service.road(ola);
+        service.road(ather);
         System.out.println("==========================");
 
         Stove prestige = new Stove();
@@ -613,8 +773,11 @@ public class Main {
         System.out.println("--------------------------");
         Gasstove sunflame = new Gasstove();
         sunflame.ignite();
-        sunflame.regulateFlame(prestige);
-        sunflame.regulateFlame(null);
+        System.out.println("--------------------------");
+        StoveBurn stoveService = new StoveBurn();
+        stoveService.useStove(prestige);
+        stoveService.useStove(butterfly);
+        stoveService.useStove(sunflame);
         System.out.println("==========================");
 
         Canister can = new Canister();
@@ -625,8 +788,11 @@ public class Main {
         System.out.println("--------------------------");
         FuelCanister diesel = new FuelCanister();
         diesel.store();
-        diesel.seal(can);
-        diesel.seal(null);
+        System.out.println("--------------------------");
+        StoreCanister store=new StoreCanister();
+        store.store(can);
+        store.store(petrol);
+        store.store(diesel);
         System.out.println("==========================");
 
         Censer clay = new Censer();
@@ -635,10 +801,13 @@ public class Main {
         Censer auto = new ElectricCenser();
         auto.releaseFragrance();
         System.out.println("--------------------------");
-        ElectricCenser smart = new ElectricCenser();
-        smart.releaseFragrance();
-        smart.powerOn(clay);
-        smart.powerOn(null);
+        ElectricCenser smart1 = new ElectricCenser();
+        smart1.releaseFragrance();
+        System.out.println("--------------------------");
+        CenserHandler handle = new CenserHandler();
+        handle.handleCenser(clay);
+        handle.handleCenser(auto);
+        handle.handleCenser(smart1);
         System.out.println("==========================");
 
         Blanket wool = new Blanket();
@@ -649,8 +818,11 @@ public class Main {
         System.out.println("--------------------------");
         ElectricBlanket cozy = new ElectricBlanket();
         cozy.cover();
-        cozy.heatUp(wool);
-        cozy.heatUp(null);
+        System.out.println("--------------------------");
+        SleepAssistant assistant = new SleepAssistant();
+        assistant.prepareSleep(wool);
+        assistant.prepareSleep(blank);
+        assistant.prepareSleep(cozy);
         System.out.println("==========================");
 
         Rug cotton = new Rug();
@@ -661,20 +833,26 @@ public class Main {
         System.out.println("--------------------------");
         SilkRug silk = new SilkRug();
         silk.spread();
-        silk.fold(cotton);
-        silk.fold(null);
+        System.out.println("--------------------------");
+        InteriorDecorator decorator = new InteriorDecorator();
+        decorator.arrangeRug(cotton);
+        decorator.arrangeRug(rug);
+        decorator.arrangeRug(silk);
         System.out.println("==========================");
 
-        Pitcher steel = new Pitcher();
-        steel.pour();
+        Pitcher steel1 = new Pitcher();
+        steel1.pour();
         System.out.println("--------------------------");
         Pitcher matka = new ClayPitcher();
         matka.pour();
         System.out.println("--------------------------");
         ClayPitcher earthen = new ClayPitcher();
         earthen.pour();
-        earthen.clean(steel);
-        earthen.clean(null);
+        System.out.println("--------------------------");
+        WaterUtility utility = new WaterUtility();
+        utility.serveWater(steel1);
+        utility.serveWater(matka);
+        utility.serveWater(earthen);
         System.out.println("==========================");
 
         Cradle basicCradle = new Cradle();
@@ -685,8 +863,11 @@ public class Main {
         System.out.println("--------------------------");
         WoodenCradle premiumCradle = new WoodenCradle();
         premiumCradle.rock();
-        premiumCradle.paint(basicCradle);
-        premiumCradle.paint(null);
+        System.out.println("--------------------------");
+        NurserySetup setup = new NurserySetup();
+        setup.arrangeCradle(basicCradle);
+        setup.arrangeCradle(woodenCradle);
+        setup.arrangeCradle(premiumCradle);
         System.out.println("==========================");
 
         Pincer basicPincer = new Pincer();
@@ -697,8 +878,11 @@ public class Main {
         System.out.println("--------------------------");
         MetalPincer durablePincer = new MetalPincer();
         durablePincer.grip();
-        durablePincer.sharpen(basicPincer);
-        durablePincer.sharpen(null);
+        System.out.println("--------------------------");
+        ToolKit kit1 = new ToolKit();
+        kit1.checkTool(basicPincer);
+        kit1.checkTool(sharpPincer);
+        kit1.checkTool(durablePincer);
         System.out.println("==========================");
 
         Flagon basicFlagon = new Flagon();
@@ -709,8 +893,11 @@ public class Main {
         System.out.println("--------------------------");
         CeramicFlagon elegantFlagon = new CeramicFlagon();
         elegantFlagon.hold();
-        elegantFlagon.clean(basicFlagon);
-        elegantFlagon.clean(null);
+        System.out.println("--------------------------");
+        UtilityKit utilityKit = new UtilityKit();
+        utilityKit.checkItem(basicFlagon);
+        utilityKit.checkItem(ceramicFlagon);
+        utilityKit.checkItem(elegantFlagon);
         System.out.println("==========================");
 
         JossStick regularStick = new JossStick();
@@ -721,8 +908,11 @@ public class Main {
         System.out.println("--------------------------");
         IncenseJossStick scentedStick = new IncenseJossStick();
         scentedStick.burn();
-        scentedStick.fragrance(regularStick);
-        scentedStick.fragrance(null);
+        System.out.println("--------------------------");
+        StickHandler handler1 = new StickHandler();
+        handler1.checkItem(regularStick);
+        handler1.checkItem(incenseStick);
+        handler1.checkItem(scentedStick);
         System.out.println("==========================");
 
         Spitton regularSpitton = new Spitton();
@@ -733,8 +923,11 @@ public class Main {
         System.out.println("--------------------------");
         MetalSpitton advancedSpitton = new MetalSpitton();
         advancedSpitton.use();
-        advancedSpitton.clean(regularSpitton);
-        advancedSpitton.clean(null);
+        System.out.println("--------------------------");
+        SpittonUse spitton = new SpittonUse();
+        spitton.use(regularSpitton);
+        spitton.use(metalSpitton);
+        spitton.use(advancedSpitton);
         System.out.println("==========================");
 
         Chandelier regularChandelier = new Chandelier();
@@ -745,8 +938,11 @@ public class Main {
         System.out.println("--------------------------");
         CrystalChandelier fancyChandelier = new CrystalChandelier();
         fancyChandelier.illuminate();
-        fancyChandelier.polish(regularChandelier);
-        fancyChandelier.polish(null);
+        System.out.println("--------------------------");
+        DecorUtility decor=new DecorUtility();
+        decor.apply(regularChandelier);
+        decor.apply(crystalChandelier);
+        decor.apply(fancyChandelier );
         System.out.println("==========================");
 
         Tong regularTong = new Tong();
@@ -757,8 +953,11 @@ public class Main {
         System.out.println("--------------------------");
         CookingTong specializedTong = new CookingTong();
         specializedTong.grip();
-        specializedTong.clean(regularTong);
-        specializedTong.clean(null);
+        System.out.println("--------------------------");
+        TongCare caring = new TongCare();
+        caring.handleTong(regularTong);
+        caring.handleTong(cookingTong);
+        caring.handleTong(specializedTong);
         System.out.println("==========================");
 
         Mixture regularMixture = new Mixture();
@@ -769,9 +968,13 @@ public class Main {
         System.out.println("--------------------------");
         SpiceMixture spicyMixture = new SpiceMixture();
         spicyMixture.mix();
-        spicyMixture.grind(regularMixture);
-        spicyMixture.grind(null);
-       System.out.println("==========================");
+        System.out.println("--------------------------");
+        MixtureGrind grind = new MixtureGrind();
+        grind.handleMixture(regularMixture);
+        grind.handleMixture(spiceMixture);
+        grind.handleMixture(spicyMixture);
+
+        System.out.println("==========================");
 
         Cylinder regularCylinder = new Cylinder();
         regularCylinder.rotate();
@@ -781,9 +984,12 @@ public class Main {
         System.out.println("--------------------------");
         HollowCylinder specialHollowCylinder = new HollowCylinder();
         specialHollowCylinder.rotate();
-        specialHollowCylinder.inspect(regularCylinder);
-        specialHollowCylinder.inspect(null);
-       System.out.println("==========================");
+        System.out.println("--------------------------");
+        CylinderGas gas = new CylinderGas();
+        gas.handleCylinder(regularCylinder);
+        gas.handleCylinder(hollowCylinder);
+        gas.handleCylinder(specialHollowCylinder);
+        System.out.println("==========================");
 
         Lid regularLid = new Lid();
         regularLid.cover();
@@ -793,8 +999,11 @@ public class Main {
         System.out.println("--------------------------");
         PlasticLid specializedPlasticLid = new PlasticLid();
         specializedPlasticLid.cover();
-        specializedPlasticLid.checkFit(regularLid);
-        specializedPlasticLid.checkFit(null);
+        System.out.println("--------------------------");
+        LidThing thing = new LidThing();
+        thing.handleLid(regularLid);
+        thing.handleLid(plasticLid);
+        thing.handleLid(specializedPlasticLid);
         System.out.println("==========================");
 
         Cauldron regularCauldron = new Cauldron();
@@ -805,8 +1014,11 @@ public class Main {
         System.out.println("--------------------------");
         IronCauldron specializedIronCauldron = new IronCauldron();
         specializedIronCauldron.boil();
-        specializedIronCauldron.heat(regularCauldron);
-        specializedIronCauldron.heat(null);
+        System.out.println("--------------------------");
+        CauldronUtility cauldron = new CauldronUtility();
+        cauldron.handleCauldron(regularCauldron);
+        cauldron.handleCauldron(ironCauldron);
+        cauldron.handleCauldron(specializedIronCauldron);
         System.out.println("==========================");
 
         Fire regularFire = new Fire();
@@ -817,8 +1029,11 @@ public class Main {
         System.out.println("--------------------------");
         Campfire specialCampfire = new Campfire();
         specialCampfire.ignite();
-        specialCampfire.warmUp(regularFire);
-        specialCampfire.warmUp(null);
+        System.out.println("--------------------------");
+        FireDenger fireCare = new FireDenger();
+        fireCare.handleFire(regularFire);
+        fireCare.handleFire(campfire);
+        fireCare.handleFire(specialCampfire);
         System.out.println("==========================");
 
         Fog regularFog = new Fog();
@@ -829,8 +1044,11 @@ public class Main {
         System.out.println("--------------------------");
         MorningFog specialMorningFog = new MorningFog();
         specialMorningFog.appear();
-        specialMorningFog.dissipate(regularFog);
-        specialMorningFog.dissipate(null);
+        System.out.println("--------------------------");
+        FogClimate climate=new  FogClimate();
+       climate.handle(regularFog);
+        climate.handle(morningFog);
+        climate.handle(specialMorningFog);
         System.out.println("==========================");
 
         Pan regularPan = new Pan();
@@ -841,8 +1059,11 @@ public class Main {
         System.out.println("--------------------------");
         FryingPan specialFryingPan = new FryingPan();
         specialFryingPan.cook();
-        specialFryingPan.fry(regularPan);
-        specialFryingPan.fry(null);
+        System.out.println("--------------------------");
+        PanCook cookHandler = new PanCook();
+        cookHandler.cook(regularPan);
+        cookHandler.cook(fryingPan);
+        cookHandler.cook(specialFryingPan);
         System.out.println("==========================");
 
         Platter regularPlatter = new Platter();
@@ -853,8 +1074,11 @@ public class Main {
         System.out.println("--------------------------");
         DinnerPlatter specialDinnerPlatter = new DinnerPlatter();
         specialDinnerPlatter.serve();
-        specialDinnerPlatter.arrange(regularPlatter);
-        specialDinnerPlatter.arrange(null);
+        System.out.println("--------------------------");
+        PlatterServe serveHandler = new PlatterServe();
+        serveHandler.serveFood(regularPlatter);
+        serveHandler.serveFood(dinnerPlatter);
+        serveHandler.serveFood(specialDinnerPlatter);
         System.out.println("==========================");
 
         RollerPin regularRollerPin = new RollerPin();
@@ -865,8 +1089,11 @@ public class Main {
         System.out.println("--------------------------");
         WoodenRollerPin specialWoodenRollerPin = new WoodenRollerPin();
         specialWoodenRollerPin.roll();
-        specialWoodenRollerPin.smoothen(regularRollerPin);
-        specialWoodenRollerPin.smoothen(null);
+        System.out.println("--------------------------");
+        RollerService rollerService = new RollerService();
+        rollerService.useRoller(regularRollerPin);
+        rollerService.useRoller(woodenRollerPin);
+        rollerService.useRoller(specialWoodenRollerPin);
         System.out.println("==========================");
 
         Spice regularSpice = new Spice();
@@ -877,8 +1104,11 @@ public class Main {
         System.out.println("--------------------------");
         ChiliSpice specialChiliSpice = new ChiliSpice();
         specialChiliSpice.flavor();
-        specialChiliSpice.addHeat(regularSpice);
-        specialChiliSpice.addHeat(null);
+        System.out.println("--------------------------");
+        SpiceTaster taster = new SpiceTaster();
+        taster.testFlavor(regularSpice);
+        taster.testFlavor(chiliSpice);
+        taster.testFlavor(specialChiliSpice);
         System.out.println("==========================");
 
         Ginger regularGinger = new Ginger();
@@ -889,8 +1119,11 @@ public class Main {
         System.out.println("--------------------------");
         GarlicGinger specialGarlicGinger = new GarlicGinger();
         specialGarlicGinger.flavor();
-        specialGarlicGinger.blend(regularGinger);
-        specialGarlicGinger.blend(null);
+        System.out.println("--------------------------");
+        GingerMixer mixer = new GingerMixer();
+        mixer.mix(regularGinger);
+        mixer.mix(garlicGinger);
+        mixer.mix(specialGarlicGinger);
         System.out.println("==========================");
 
         Chopper regularChopper = new Chopper();
@@ -901,8 +1134,11 @@ public class Main {
         System.out.println("--------------------------");
         VegetableChopper specialVegetableChopper = new VegetableChopper();
         specialVegetableChopper.chop();
-        specialVegetableChopper.dice(regularChopper);
-        specialVegetableChopper.dice(null);
+        System.out.println("--------------------------");
+        ChopperWork work = new ChopperWork();
+        work.processChop(regularChopper);
+        work.processChop(vegetableChopper);
+        work.processChop(specialVegetableChopper);
         System.out.println("==========================");
 
         Turmeric regularTurmeric = new Turmeric();
@@ -913,8 +1149,11 @@ public class Main {
         System.out.println("--------------------------");
         CurcuminTurmeric specialCurcuminTurmeric = new CurcuminTurmeric();
         specialCurcuminTurmeric.flavor();
-        specialCurcuminTurmeric.boostHealth(regularTurmeric);
-        specialCurcuminTurmeric.boostHealth(null);
+        System.out.println("--------------------------");
+        TurmericTester teste = new TurmericTester();
+        teste.testFlavor(regularTurmeric);
+        teste.testFlavor(curcuminTurmeric);
+        teste.testFlavor(specialCurcuminTurmeric);
         System.out.println("==========================");
 
         Cardamom regularCardamom = new Cardamom();
@@ -925,8 +1164,11 @@ public class Main {
         System.out.println("--------------------------");
         GreenCardamom specialGreenCardamom = new GreenCardamom();
         specialGreenCardamom.aroma();
-        specialGreenCardamom.enhanceFlavor(regularCardamom);
-        specialGreenCardamom.enhanceFlavor(null);
+        System.out.println("--------------------------");
+        CardamomSpice Spice = new CardamomSpice();
+        Spice.processCardamom(regularCardamom);
+        Spice.processCardamom(greenCardamom);
+        Spice.processCardamom(specialGreenCardamom);
         System.out.println("==========================");
 
         Pepper regularPepper = new Pepper();
@@ -937,8 +1179,11 @@ public class Main {
         System.out.println("--------------------------");
         BlackPepper specialBlackPepper = new BlackPepper();
         specialBlackPepper.spice();
-        specialBlackPepper.enhanceTaste(regularPepper);
-        specialBlackPepper.enhanceTaste(null);
+        System.out.println("--------------------------");
+        PepperRecipe handl = new PepperRecipe();
+        handl.handle(regularPepper);
+        handl.handle(blackPepper);
+        handl.handle(specialBlackPepper);
         System.out.println("==========================");
 
         Jar regularJar = new Jar();
@@ -949,8 +1194,11 @@ public class Main {
         System.out.println("--------------------------");
         GlassJar specialGlassJar = new GlassJar();
         specialGlassJar.store();
-        specialGlassJar.preserve(regularJar);
-        specialGlassJar.preserve(null);
+        System.out.println("--------------------------");
+        JarUtil util = new JarUtil();
+        util.handleJar(regularJar);
+        util.handleJar(glassJar);
+        util.handleJar(specialGlassJar);
         System.out.println("==========================");
 
         Wok regularWok = new Wok();
@@ -961,8 +1209,11 @@ public class Main {
         System.out.println("--------------------------");
         StainlessSteelWok specialWok = new StainlessSteelWok();
         specialWok.cook();
-        specialWok.stirFry(regularWok);
-        specialWok.stirFry(null);
+        System.out.println("--------------------------");
+        WokUtil util1 = new WokUtil();
+        util1.handleWok(regularWok);
+        util1.handleWok(stainlessSteelWok);
+        util1.handleWok(specialWok);
         System.out.println("==========================");
 
         Whisk regularWhisk = new Whisk();
@@ -973,8 +1224,11 @@ public class Main {
         System.out.println("--------------------------");
         ElectricWhisk specialElectricWhisk = new ElectricWhisk();
         specialElectricWhisk.mix();
-        specialElectricWhisk.whiskWithSpeed(regularWhisk);
-        specialElectricWhisk.whiskWithSpeed(null);
+        System.out.println("--------------------------");
+        ElectricWhiskMaterial whiskHandler = new ElectricWhiskMaterial();
+        whiskHandler.handle(regularWhisk);
+        whiskHandler.handle(electricWhisk);
+        whiskHandler.handle(specialElectricWhisk);
         System.out.println("==========================");
 
         Masher regularMasher = new Masher();
@@ -985,8 +1239,11 @@ public class Main {
         System.out.println("--------------------------");
         PotatoMasher specialPotatoMasher = new PotatoMasher();
         specialPotatoMasher.mash();
-        specialPotatoMasher.mashWithStyle(regularMasher);
-        specialPotatoMasher.mashWithStyle(null);
+        System.out.println("--------------------------");
+        PotatoMasherCurry masherHandler = new PotatoMasherCurry();
+        masherHandler.handle(regularMasher);
+        masherHandler.handle(potatoMasher);
+        masherHandler.handle(specialPotatoMasher);
         System.out.println("==========================");
 
         Frog regularFrog = new Frog();
@@ -997,8 +1254,11 @@ public class Main {
         System.out.println("--------------------------");
         TreeFrog specialTreeFrog = new TreeFrog();
         specialTreeFrog.jump();
-        specialTreeFrog.croak(regularFrog);
-        specialTreeFrog.croak(null);
+        System.out.println("--------------------------");
+        TreeFrogAnimal frogHandler = new TreeFrogAnimal();
+        frogHandler.handle(regularFrog );
+        frogHandler.handle(treeFrog);
+        frogHandler.handle(specialTreeFrog);
         System.out.println("==========================");
 
         Root rootObj = new Root();
@@ -1009,8 +1269,11 @@ public class Main {
         System.out.println("--------------------------");
         Tree specificTree = new Tree();
         specificTree.grow();
-        specificTree.shade(rootObj);
-        specificTree.shade(null);
+        System.out.println("--------------------------");
+        TreePart part = new TreePart();
+        part.handle(rootObj);
+        part.handle(treeObj );
+        part.handle(specificTree);
         System.out.println("==========================");
 
         Desert generalDesert = new Desert();
@@ -1021,8 +1284,11 @@ public class Main {
         System.out.println("--------------------------");
         SandyDesert specificSandyDesert = new SandyDesert();
         specificSandyDesert.climate();
-        specificSandyDesert.sandStorm(generalDesert);
-        specificSandyDesert.sandStorm(null);
+        System.out.println("--------------------------");
+        DesertSoil soil = new DesertSoil();
+        soil.Soil(generalDesert);
+        soil.Soil(sandyDesert);
+        soil.Soil(specificSandyDesert);
         System.out.println("==========================");
 
         Steel steelObj = new Steel();
@@ -1033,8 +1299,11 @@ public class Main {
         System.out.println("--------------------------");
         StainlessSteel specificStainlessSteel = new StainlessSteel();
         specificStainlessSteel.strength();
-        specificStainlessSteel.polish(steelObj);
-        specificStainlessSteel.polish(null);
+        System.out.println("--------------------------");
+        MetalQuality metalQuality = new MetalQuality();
+        metalQuality.checkQuality(steelObj);
+        metalQuality.checkQuality(stainlessSteelObj);
+        metalQuality.checkQuality(specificStainlessSteel);
         System.out.println("==========================");
 
         Copper copperObj = new Copper();
@@ -1045,8 +1314,11 @@ public class Main {
         System.out.println("--------------------------");
         PureCopper specificPureCopper = new PureCopper();
         specificPureCopper.conductivity();
-        specificPureCopper.polish(copperObj);
-        specificPureCopper.polish(null);
+        System.out.println("--------------------------");
+        CopperQuality quality=new CopperQuality();
+        quality.checkQuality(copperObj);
+        quality.checkQuality(pureCopperObj);
+        quality.checkQuality(specificPureCopper);
         System.out.println("==========================");
 
         Window windowObj = new Window();
@@ -1057,8 +1329,11 @@ public class Main {
         System.out.println("--------------------------");
         GlassWindow specificGlassWindow = new GlassWindow();
         specificGlassWindow.open();
-        specificGlassWindow.clean(windowObj);
-        specificGlassWindow.clean(null);
+        System.out.println("--------------------------");
+        WindowHandler windowHandler = new WindowHandler();
+        windowHandler.handleWindow(windowObj);
+        windowHandler.handleWindow(glassWindowObj);
+        windowHandler.handleWindow(specificGlassWindow);
         System.out.println("==========================");
 
         Rapper rapperObj = new Rapper();
@@ -1069,8 +1344,12 @@ public class Main {
         System.out.println("--------------------------");
         HipHopRapper specificHipHopRapper = new HipHopRapper();
         specificHipHopRapper.perform();
-        specificHipHopRapper.freestyle(rapperObj);
-        specificHipHopRapper.freestyle(null);
+        System.out.println("--------------------------");
+        RapperPerformance rapperPerformance = new RapperPerformance();
+        rapperPerformance.handlePerformance(rapperObj);
+        rapperPerformance.handlePerformance(hipHopRapperObj);
+        rapperPerformance.handlePerformance(specificHipHopRapper);
+        System.out.println("==========================");
 
         Handle handleObj = new Handle();
         handleObj.turn();
@@ -1080,8 +1359,11 @@ public class Main {
         System.out.println("--------------------------");
         DoorHandle specificDoorHandle = new DoorHandle();
         specificDoorHandle.turn();
-        specificDoorHandle.install(handleObj);
-        specificDoorHandle.install(null);
+        System.out.println("--------------------------");
+        HandleHandler handleHandler = new HandleHandler();
+        handleHandler.manageHandle(handleObj);
+        handleHandler.manageHandle(doorHandleObj);
+        handleHandler.manageHandle(specificDoorHandle);
         System.out.println("==========================");
 
         Screen screenObj = new Screen();
@@ -1093,6 +1375,11 @@ public class Main {
         TouchScreen specificTouchScreen = new TouchScreen();
         specificTouchScreen.display();
         specificTouchScreen.touch();
+        System.out.println("--------------------------");
+        ScreenHandler screenHandler = new ScreenHandler();
+        screenHandler.manageScreen(screenObj);
+        screenHandler.manageScreen(touchScreenObj);
+        screenHandler.manageScreen(specificTouchScreen);
         System.out.println("==========================");
 
         Ant antObj = new Ant();
@@ -1104,6 +1391,11 @@ public class Main {
         WorkerAnt specificWorkerAnt = new WorkerAnt();
         specificWorkerAnt.work();
         specificWorkerAnt.dig();
+        System.out.println("--------------------------");
+        AntHandler antHandler = new AntHandler();
+        antHandler.manageAnt(antObj);
+        antHandler.manageAnt(workerAntObj);
+        antHandler.manageAnt(specificWorkerAnt);
         System.out.println("==========================");
 
         Syntax syntaxObj = new Syntax();
@@ -1115,6 +1407,11 @@ public class Main {
         ProgrammingSyntax specificProgrammingSyntax = new ProgrammingSyntax();
         specificProgrammingSyntax.explain();
         specificProgrammingSyntax.examples();
+        System.out.println("--------------------------");
+        SyntaxHandle syntaxHandler = new SyntaxHandle();
+        syntaxHandler.manageSyntax(syntaxObj);
+        syntaxHandler.manageSyntax(programmingSyntaxObj);
+        syntaxHandler.manageSyntax(specificProgrammingSyntax);
         System.out.println("==========================");
 
         Zoo zooObj = new Zoo();
@@ -1126,6 +1423,11 @@ public class Main {
         SafariZoo specificSafariZoo = new SafariZoo();
         specificSafariZoo.exhibitAnimals();
         specificSafariZoo.safariRide();
+        System.out.println("--------------------------");
+        ZooHandler zooHandler = new ZooHandler();
+        zooHandler.manageZoo(zooObj);
+        zooHandler.manageZoo(safariZooObj);
+        zooHandler.manageZoo(specificSafariZoo);
         System.out.println("==========================");
 
         Sundisk sundiskObj = new Sundisk();
@@ -1137,6 +1439,11 @@ public class Main {
         FlashSundisk specificFlashSundisk = new FlashSundisk();
         specificFlashSundisk.storeData();
         specificFlashSundisk.fastReadWrite();
+        System.out.println("--------------------------");
+        SundiskHandler sundiskHandler = new SundiskHandler();
+        sundiskHandler.manageDisk(sundiskObj);
+        sundiskHandler.manageDisk(flashSundiskObj);
+        sundiskHandler.manageDisk(specificFlashSundisk);
         System.out.println("==========================");
 
         Route routeObj = new Route();
@@ -1148,20 +1455,27 @@ public class Main {
         AdvancedRoute specificAdvancedRoute = new AdvancedRoute();
         specificAdvancedRoute.planRoute();
         specificAdvancedRoute.addScenicRoute();
+        System.out.println("--------------------------");
+        RouteHandler routeHandler = new RouteHandler();
+        routeHandler.handleRoute(routeObj);
+        routeHandler.handleRoute(advancedRouteObj);
+        routeHandler.handleRoute(specificAdvancedRoute);
         System.out.println("==========================");
 
         Lizard lizardObj = new Lizard();
-        lizardObj.move();
         lizardObj.makeSound();
         System.out.println("--------------------------");
         Lizard geckoObj = new Gecko();
-        geckoObj.move();
         geckoObj.makeSound();
         System.out.println("--------------------------");
         Gecko specificGecko = new Gecko();
-        specificGecko.move();
         specificGecko.makeSound();
         specificGecko.changeColor();
+        System.out.println("--------------------------");
+        LizardHandler lizardHandler = new LizardHandler();
+        lizardHandler.handleLizard(lizardObj);
+        lizardHandler.handleLizard(geckoObj);
+        lizardHandler.handleLizard(specificGecko);
         System.out.println("==========================");
 
         Stage stageObj = new Stage();
@@ -1176,48 +1490,59 @@ public class Main {
         specificConcertStage.setupStage();
         specificConcertStage.showPerformance();
         specificConcertStage.arrangeSeating();
+        System.out.println("--------------------------");
+        StageHandler stageHandler = new StageHandler();
+        stageHandler.handleStage(stageObj);
+        stageHandler.handleStage(concertStageObj);
+        stageHandler.handleStage(specificConcertStage);
         System.out.println("==========================");
 
         Garden gardenObj = new Garden();
-        gardenObj.plant();
-        gardenObj.water();
+        gardenObj.Water();
         System.out.println("--------------------------");
         Garden flowerGardenObj = new FlowerGarden();
-        flowerGardenObj.plant();
-        flowerGardenObj.water();
+        flowerGardenObj.Water();
         System.out.println("--------------------------");
         FlowerGarden specificFlowerGarden = new FlowerGarden();
-        specificFlowerGarden.plant();
-        specificFlowerGarden.water();
+        specificFlowerGarden.Water();
         specificFlowerGarden.arrangeFlowers();
+        System.out.println("--------------------------");
+        GardenHandler gardenHandler = new GardenHandler();
+        gardenHandler.handleGarden(gardenObj);
+        gardenHandler.handleGarden(flowerGardenObj);
+        gardenHandler.handleGarden(specificFlowerGarden);
         System.out.println("==========================");
 
         Flashcard flashcardObj = new Flashcard();
         flashcardObj.displayFront();
-        flashcardObj.displayBack();
         System.out.println("--------------------------");
         Flashcard studyFlashcardObj = new StudyFlashcard();
         studyFlashcardObj.displayFront();
-        studyFlashcardObj.displayBack();
         System.out.println("--------------------------");
         StudyFlashcard specificStudyFlashcard = new StudyFlashcard();
         specificStudyFlashcard.displayFront();
-        specificStudyFlashcard.displayBack();
         specificStudyFlashcard.review();
+        System.out.println("--------------------------");
+        FlashcardHandler flashHandler = new FlashcardHandler();
+        flashHandler.manageFlashcard(flashcardObj);
+        flashHandler.manageFlashcard(studyFlashcardObj);
+        flashHandler.manageFlashcard(specificStudyFlashcard);
         System.out.println("==========================");
 
         Letter letterObj = new Letter();
-        letterObj.write();
         letterObj.send();
         System.out.println("--------------------------");
         Letter greetingLetterObj = new GreetingLetter();
-        greetingLetterObj.write();
         greetingLetterObj.send();
         System.out.println("--------------------------");
         GreetingLetter specificGreetingLetter = new GreetingLetter();
-        specificGreetingLetter.write();
         specificGreetingLetter.send();
         specificGreetingLetter.addGreeting();
+        System.out.println("--------------------------");
+        LetterHandler letterHandler = new LetterHandler();
+        letterHandler.manageLetter(letterObj);
+        letterHandler.manageLetter(greetingLetterObj);
+        letterHandler.manageLetter(specificGreetingLetter );
         System.out.println("==========================");
 
 

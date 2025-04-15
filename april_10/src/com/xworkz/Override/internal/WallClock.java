@@ -10,11 +10,9 @@ public class WallClock extends Clock {
         System.out.println("WallClock showtime in analog format");
     }
 
-    public void chime(Clock clock) {
-        if (clock != null) {
+    public void chime() {
+
             System.out.println("WallClock chimes every hour");
-        } else {
-            System.out.println("Clock is null, cannot chime");
-        }
+
     }
 }

@@ -10,11 +10,9 @@ public class MetalSpitton extends Spitton {
         System.out.println("Using a metal spitton");
     }
 
-    public void clean(Spitton spitton) {
-        if (spitton != null) {
+    public void clean(){
+
             System.out.println("Cleaning the metal spitton");
-        } else {
-            System.out.println("Spitton is null, cannot clean");
-        }
+
     }
 }

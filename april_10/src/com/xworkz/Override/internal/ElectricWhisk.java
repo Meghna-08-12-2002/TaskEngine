@@ -10,11 +10,8 @@ public class ElectricWhisk extends Whisk {
         System.out.println("Mixing ingredients with the electric whisk");
     }
 
-    public void whiskWithSpeed(Whisk whisk) {
-        if (whisk != null) {
+    public void whiskWithSpeed() {
             System.out.println("Whisking ingredients at high speed with the electric whisk");
-        } else {
-            System.out.println("Whisk is null, cannot whisk");
-        }
+
     }
 }

@@ -10,11 +10,9 @@ public class ElectricCenser extends Censer {
         System.out.println("Releasing fragrance from electric censer");
     }
 
-    public void powerOn(Censer censer) {
-        if (censer != null) {
+    public void powerOn() {
+
             System.out.println("Powering on the electric censer");
-        } else {
-            System.out.println("Censer is null, cannot power on");
-        }
+
     }
 }

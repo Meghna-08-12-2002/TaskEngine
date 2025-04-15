@@ -10,11 +10,9 @@ public class SilkRug extends Rug {
         System.out.println("Spreading a silk rug");
     }
 
-    public void fold(Rug rug) {
-        if (rug != null) {
+    public void fold() {
+
             System.out.println("Folding the silk rug");
-        } else {
-            System.out.println("Rug is null, cannot fold");
-        }
+
     }
 }

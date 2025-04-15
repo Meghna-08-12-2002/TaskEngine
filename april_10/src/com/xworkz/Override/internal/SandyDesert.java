@@ -10,11 +10,9 @@ public class SandyDesert extends Desert {
         System.out.println("Sandy desert has hot and dry climate with lots of sand");
     }
 
-    public void sandStorm(Desert desert) {
-        if (desert != null) {
+    public void sandStorm() {
+
             System.out.println("Sandy desert is experiencing a sandstorm");
-        } else {
-            System.out.println("Desert is null, cannot experience a sandstorm");
-        }
+
     }
 }

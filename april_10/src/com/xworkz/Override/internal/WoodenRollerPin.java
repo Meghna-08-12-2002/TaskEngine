@@ -10,11 +10,9 @@ public void roll() {
     System.out.println("Rolling dough with a wooden roller pin");
 }
 
-public void smoothen(RollerPin rollerPin) {
-    if (rollerPin != null) {
+public void smoothen() {
+
         System.out.println("Smoothing dough with the wooden roller pin");
-    } else {
-        System.out.println("Roller pin is null, cannot smoothen dough");
-    }
+
 }
 }

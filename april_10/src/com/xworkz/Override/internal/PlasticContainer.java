@@ -10,11 +10,9 @@ public class PlasticContainer extends Container {
         System.out.println("Storing food in a plastic container");
     }
 
-    public void seal(Container container) {
-        if (container != null) {
+    public void seal() {
+
             System.out.println("Sealing the plastic container");
-        } else {
-            System.out.println("Container is null, cannot seal");
-        }
+
     }
 }

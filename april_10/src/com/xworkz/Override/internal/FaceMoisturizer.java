@@ -10,11 +10,8 @@ public class FaceMoisturizer extends Moisturizer {
         System.out.println("Applying moisturizer specifically for face");
     }
 
-    public void hydrate(Moisturizer moisturizer) {
-        if (moisturizer != null) {
-            System.out.println("Hydrating skin with face moisturizer");
-        } else {
-            System.out.println("Moisturizer is null, cannot hydrate");
-        }
+    public void hydrate() {
+
+        System.out.println("Hydrating skin with face moisturizer");
     }
 }

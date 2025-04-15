@@ -6,11 +6,6 @@ public class GreetingLetter extends Letter {
     }
 
     @Override
-    public void write() {
-        System.out.println("Writing a greeting letter");
-    }
-
-    @Override
     public void send() {
         System.out.println("Sending the greeting letter with best wishes");
     }

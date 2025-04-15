@@ -2,6 +2,7 @@ package com.xworkz.Override.internal;
 
 public class InstantFevikwik extends Fevikwik {
     public InstantFevikwik() {
+
         System.out.println("No argument constructor in InstantFevikwik");
     }
 
@@ -11,11 +12,9 @@ public class InstantFevikwik extends Fevikwik {
     }
 
     public void glue(Fevikwik fevi) {
-        if (fevi != null) {
+
             System.out.println("Applying glue properly");
-        } else {
-            System.out.println("Fevikwik is missing, can't apply glue");
-        }
+
     }
 
 }

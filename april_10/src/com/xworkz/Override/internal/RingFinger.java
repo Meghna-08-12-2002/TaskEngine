@@ -10,11 +10,9 @@ public class RingFinger extends Finger{
         System.out.println("Flexing the ring finger");
     }
 
-    public void wearRing(Finger finger) {
-        if (finger != null) {
+    public void wearRing() {
+
             System.out.println("Wearing a ring on the finger");
-        } else {
-            System.out.println("No finger available to wear a ring");
-        }
+
     }
 }

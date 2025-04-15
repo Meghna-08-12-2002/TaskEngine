@@ -10,12 +10,9 @@ public class FancySticker extends Sticker {
         System.out.println("Sticking a fancy sticker");
     }
 
-    public void reposition(Sticker sticker) {
-        if (sticker != null) {
-            System.out.println("Repositioning the sticker correctly");
-        } else {
-            System.out.println("No sticker to reposition");
-        }
+    public void reposition() {
+
+        System.out.println("Repositioning the sticker correctly");
     }
 
 }

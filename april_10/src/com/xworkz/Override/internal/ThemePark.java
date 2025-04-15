@@ -10,11 +10,9 @@ public class ThemePark extends Park {
         System.out.println("Theme Park is now open with thrilling rides");
     }
 
-    public void launchRide(Park park) {
-        if (park != null) {
+    public void launchRide() {
+
             System.out.println("Launching roller coaster ride");
-        } else {
-            System.out.println("Park is null, cannot launch ride");
-        }
+
     }
 }

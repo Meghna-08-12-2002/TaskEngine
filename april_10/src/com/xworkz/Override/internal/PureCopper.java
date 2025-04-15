@@ -10,11 +10,9 @@ public class PureCopper extends Copper {
         System.out.println("Pure Copper has excellent electrical conductivity");
     }
 
-    public void polish(Copper copper) {
-        if (copper != null) {
+    public void polish() {
+
             System.out.println("Polishing the pure copper");
-        } else {
-            System.out.println("Copper is null, cannot polish");
-        }
+
     }
 }

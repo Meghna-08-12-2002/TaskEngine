@@ -9,11 +9,7 @@ public class Circle extends Shape {
         System.out.println("Drawing a circle");
     }
 
-    public void rotate(Shape shape) {
-        if (shape!= null) {
-            System.out.println("Rotation direction is not set");
-        } else {
-            System.out.println("Rotating the circle based on shape");
-        }
+    public void rotate() {
+        System.out.println("Rotation direction is not set");
     }
 }

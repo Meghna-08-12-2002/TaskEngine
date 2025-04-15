@@ -10,11 +10,9 @@ public class Gasstove extends Stove {
         System.out.println("Igniting a gas stove");
     }
 
-    public void regulateFlame(Stove stove) {
-        if (stove != null) {
+    public void regulateFlame() {
+
             System.out.println("Regulating flame for stove");
-        } else {
-            System.out.println("Stove is null, cannot regulate flame");
-        }
+
     }
 }

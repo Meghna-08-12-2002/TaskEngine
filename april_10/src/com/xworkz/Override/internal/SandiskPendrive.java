@@ -10,11 +10,7 @@ public class SandiskPendrive extends Pendrive {
         System.out.println("Storing data in a Sandisk pendrive");
     }
 
-    public void transfer(Pendrive pendrive) {
-        if (pendrive != null) {
+    public void transfer() {
             System.out.println("Transferring data using Sandisk pendrive");
-        } else {
-            System.out.println("Pendrive is null, cannot transfer");
-        }
-    }
+            }
 }

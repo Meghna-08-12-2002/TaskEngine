@@ -10,11 +10,9 @@ public class ScentedCandle extends Candle {
         System.out.println("Lighting a scented candle with fragrance");
     }
 
-    public void releaseFragrance(Candle candle) {
-        if (candle != null) {
+    public void releaseFragrance() {
+
             System.out.println("Scented candle is releasing fragrance");
-        } else {
-            System.out.println("Candle is null, cannot release fragrance");
-        }
+
     }
 }

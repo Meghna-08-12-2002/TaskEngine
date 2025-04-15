@@ -10,11 +10,9 @@ public class CoffeeMug extends Mug {
         System.out.println("Coffee mug is holding hot coffee");
     }
 
-    public void sip(Mug mug) {
-        if (mug != null) {
+    public void sip() {
+
             System.out.println("Sipping coffee from the mug");
-        } else {
-            System.out.println("No mug to sip from");
-        }
+
     }
 }

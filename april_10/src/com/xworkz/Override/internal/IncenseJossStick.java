@@ -10,12 +10,10 @@ public class IncenseJossStick extends JossStick {
         System.out.println("Burning an incense joss stick");
     }
 
-    public void fragrance(JossStick jossStick) {
-        if (jossStick != null) {
+    public void fragrance() {
+
             System.out.println("The joss stick has a pleasant fragrance");
-        } else {
-            System.out.println("Joss stick is null, no fragrance");
-        }
+
     }
 
 }

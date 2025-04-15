@@ -6,11 +6,6 @@ public class ConcertStage  extends Stage {
     }
 
     @Override
-    public void setupStage() {
-        System.out.println("Setting up a concert stage with sound and lighting");
-    }
-
-    @Override
     public void showPerformance() {
         System.out.println("Showing a live concert performance");
     }

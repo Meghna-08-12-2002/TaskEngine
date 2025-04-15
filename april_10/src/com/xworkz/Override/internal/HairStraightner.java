@@ -10,11 +10,9 @@ public class HairStraightner extends Straightner {
         System.out.println("Heating the hair straightner to optimal temperature");
     }
 
-    public void straighten(Straightner straightner) {
-        if (straightner != null) {
+    public void straighten() {
+
             System.out.println("Straightening hair with the hair straightner");
-        } else {
-            System.out.println("Straightner is null, cannot straighten");
-        }
+
     }
 }

@@ -10,11 +10,9 @@ public class ClayPitcher extends Pitcher {
         System.out.println("Pouring water from a clay pitcher");
     }
 
-    public void clean(Pitcher pitcher) {
-        if (pitcher != null) {
+    public void clean() {
+
             System.out.println("Cleaning the clay pitcher");
-        } else {
-            System.out.println("Pitcher is null, cannot clean");
-        }
+
     }
 }

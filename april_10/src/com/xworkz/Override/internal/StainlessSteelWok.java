@@ -10,11 +10,9 @@ public class StainlessSteelWok extends Wok {
         System.out.println("Cooking with the stainless steel wok");
     }
 
-    public void stirFry(Wok wok) {
-        if (wok != null) {
+    public void stirFry() {
+
             System.out.println("Stir-frying with the stainless steel wok");
-        } else {
-            System.out.println("Wok is null, cannot stir-fry");
-        }
+
     }
 }

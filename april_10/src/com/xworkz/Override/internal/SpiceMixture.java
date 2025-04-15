@@ -10,11 +10,9 @@ public class SpiceMixture extends Mixture {
         System.out.println("Mixing spices in a spice mixture");
     }
 
-    public void grind(Mixture mixture) {
-        if (mixture != null) {
+    public void grind() {
+
             System.out.println("Grinding the spice mixture");
-        } else {
-            System.out.println("Mixture is null, cannot grind");
-        }
+
     }
 }

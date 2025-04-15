@@ -10,11 +10,9 @@ public class MorningFog extends Fog {
         System.out.println("Morning fog is appearing");
     }
 
-    public void dissipate(Fog fog) {
-        if (fog != null) {
+    public void dissipate() {
+
             System.out.println("Morning fog is dissipating");
-        } else {
-            System.out.println("Fog is null, cannot dissipate");
-        }
+
     }
 }

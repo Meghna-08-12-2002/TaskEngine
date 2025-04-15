@@ -10,11 +10,9 @@ public class WirelessMic extends Mic {
         System.out.println("Recording audio using wireless mic");
     }
 
-    public void connect(Mic mic) {
-        if (mic != null) {
+    public void connect() {
+
             System.out.println("Connecting wireless mic to system");
-        } else {
-            System.out.println("Mic is null, cannot connect");
-        }
+
     }
 }

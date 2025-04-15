@@ -10,12 +10,10 @@ public class MetalPincer extends Pincer {
         System.out.println("Gripping with a metal pincer");
     }
 
-    public void sharpen(Pincer pincer) {
-        if (pincer != null) {
+    public void sharpen() {
+
             System.out.println("Sharpening the metal pincer");
-        } else {
-            System.out.println("Pincer is null, cannot sharpen");
-        }
+
     }
 
 }

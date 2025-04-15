@@ -10,12 +10,9 @@ public class SteelFlask extends Flask {
         System.out.println("Carrying hot liquid in a steel flask");
     }
 
-    public void insulate(Flask flask) {
-        if (flask != null) {
+    public void insulate() {
             System.out.println("Insulating the flask to maintain temperature");
-        } else {
-            System.out.println("Flask is null, cannot insulate");
-        }
+
     }
 
 }

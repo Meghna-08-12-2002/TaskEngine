@@ -10,11 +10,8 @@ public class SilverSpoon extends Spoon {
         System.out.println("Scooping with a polished silver spoon");
     }
 
-    public void shine(Spoon spoon) {
-        if (spoon != null) {
+    public void shine() {
             System.out.println("Shining the silver spoon");
-        } else {
-            System.out.println("Spoon is null, cannot shine");
-        }
+
     }
 }

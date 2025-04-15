@@ -10,11 +10,9 @@ public class FryingPan extends Pan {
         System.out.println("Cooking with a frying pan");
     }
 
-    public void fry(Pan pan) {
-        if (pan != null) {
+    public void fry() {
+
             System.out.println("Frying food in the frying pan");
-        } else {
-            System.out.println("Pan is null, cannot fry");
-        }
+
     }
 }

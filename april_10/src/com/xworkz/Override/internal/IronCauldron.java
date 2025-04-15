@@ -10,11 +10,9 @@ public class IronCauldron extends Cauldron {
         System.out.println("Boiling in an iron cauldron");
     }
 
-    public void heat(Cauldron cauldron) {
-        if (cauldron != null) {
+    public void heat() {
+
             System.out.println("Heating the iron cauldron");
-        } else {
-            System.out.println("Cauldron is null, cannot heat");
-        }
+
     }
 }

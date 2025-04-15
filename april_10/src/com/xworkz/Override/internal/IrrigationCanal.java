@@ -10,11 +10,9 @@ public class IrrigationCanal extends WaterCanal {
         System.out.println("Water is flowing through the irrigation canal");
     }
 
-    public void clean(WaterCanal canal) {
-        if (canal != null) {
+    public void clean() {
+
             System.out.println("Cleaning the irrigation canal");
-        } else {
-            System.out.println("Canal is null, cannot clean");
-        }
+
     }
 }

@@ -10,11 +10,9 @@ public class StainlessSteel extends Steel {
         System.out.println("Stainless Steel is resistant to corrosion and highly durable");
     }
 
-    public void polish(Steel steel) {
-        if (steel != null) {
+    public void polish() {
+
             System.out.println("Polishing the stainless steel surface");
-        } else {
-            System.out.println("Steel is null, cannot polish");
-        }
+
     }
 }

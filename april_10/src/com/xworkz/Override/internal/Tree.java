@@ -10,12 +10,10 @@ public class Tree extends Root {
         System.out.println("Tree is growing tall");
     }
 
-    public void shade(Root root) {
-        if (root != null) {
+    public void shade() {
+
             System.out.println("Tree provides shade to the root");
-        } else {
-            System.out.println("Root is null, cannot provide shade");
-        }
+
     }
 
 }

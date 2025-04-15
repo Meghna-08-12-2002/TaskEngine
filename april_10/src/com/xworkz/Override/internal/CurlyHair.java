@@ -10,11 +10,9 @@ public class CurlyHair extends Hair {
         System.out.println("Styling curly hair with extra care");
     }
 
-    public void moisturize(Hair hair) {
-        if (hair != null) {
+    public void moisturize() {
+
             System.out.println("Applying moisturizer for curly hair");
-        } else {
-            System.out.println("Hair is null, cannot moisturize");
-        }
+
     }
 }

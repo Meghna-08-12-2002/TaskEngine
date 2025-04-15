@@ -10,11 +10,9 @@ public class CampingTent extends Tent {
         System.out.println("Setting up a camping tent with ropes and poles");
     }
 
-    public void pack(Tent tent) {
-        if (tent != null) {
+    public void pack() {
+
             System.out.println("Packing the camping tent");
-        } else {
-            System.out.println("Tent is null, cannot pack");
-        }
+
     }
 }

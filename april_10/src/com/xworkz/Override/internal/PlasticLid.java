@@ -10,11 +10,9 @@ public class PlasticLid extends Lid {
         System.out.println("Covering with a plastic lid");
     }
 
-    public void checkFit(Lid lid) {
-        if (lid != null) {
+    public void checkFit() {
+
             System.out.println("Checking the fit of the plastic lid");
-        } else {
-            System.out.println("Lid is null, cannot check fit");
-        }
+
     }
 }

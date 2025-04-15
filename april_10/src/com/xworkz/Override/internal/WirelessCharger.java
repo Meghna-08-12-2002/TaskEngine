@@ -10,11 +10,9 @@ public class WirelessCharger extends Charger {
         System.out.println("Supplying power through wireless charger");
     }
 
-    public void detect(Charger charger) {
-        if (charger != null) {
+    public void detect() {
+
             System.out.println("Device detected on wireless charger");
-        } else {
-            System.out.println("No device detected");
-        }
+
     }
 }

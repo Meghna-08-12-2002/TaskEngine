@@ -10,11 +10,9 @@ public class WoodenCradle extends Cradle {
         System.out.println("Rocking in a wooden cradle");
     }
 
-    public void paint(Cradle cradle) {
-        if (cradle != null) {
+    public void paint() {
+
             System.out.println("Painting the wooden cradle");
-        } else {
-            System.out.println("Cradle is null, cannot paint");
-        }
+
     }
 }

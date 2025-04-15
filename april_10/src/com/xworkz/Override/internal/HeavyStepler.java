@@ -10,11 +10,9 @@ public class HeavyStepler extends Stepler {
         System.out.println("Binding thick documents using heavy stepler");
     }
 
-    public void reload(Stepler stepler) {
-        if (stepler != null) {
+    public void reload() {
+
             System.out.println("Reloading heavy stepler");
-        } else {
-            System.out.println("Stepler is null, cannot reload");
-        }
+
     }
 }

@@ -10,11 +10,9 @@ public class GreenCardamom extends Cardamom {
         System.out.println("Adding aroma with green cardamom");
     }
 
-    public void enhanceFlavor(Cardamom cardamom) {
-        if (cardamom != null) {
+    public void enhanceFlavor() {
+
             System.out.println("Enhancing flavor with green cardamom");
-        } else {
-            System.out.println("Cardamom is null, cannot enhance flavor");
-        }
+
     }
 }

@@ -10,11 +10,9 @@ public class CurcuminTurmeric extends Turmeric {
         System.out.println("Adding flavor with curcumin turmeric");
     }
 
-    public void boostHealth(Turmeric turmeric) {
-        if (turmeric != null) {
+    public void boostHealth() {
+
             System.out.println("Boosting health with curcumin turmeric");
-        } else {
-            System.out.println("Turmeric is null, cannot boost health");
-        }
+
     }
 }

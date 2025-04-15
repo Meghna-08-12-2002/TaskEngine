@@ -10,11 +10,9 @@ public class LiquidEyeliner extends Eyeliner {
         System.out.println("Drawing with liquid eyeliner");
     }
 
-    public void waterproof(Eyeliner eyeliner) {
-        if (eyeliner != null) {
+    public void waterproof() {
+
             System.out.println("This eyeliner is waterproof");
-        } else {
-            System.out.println("Eyeliner object is null, can't check waterproof");
-        }
+
     }
 }

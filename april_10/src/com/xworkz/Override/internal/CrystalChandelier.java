@@ -10,11 +10,9 @@ public class CrystalChandelier extends Chandelier {
         System.out.println("Illuminating with a crystal chandelier");
     }
 
-    public void polish(Chandelier chandelier) {
-        if (chandelier != null) {
+    public void polish() {
+
             System.out.println("Polishing the crystal chandelier");
-        } else {
-            System.out.println("Chandelier is null, cannot polish");
-        }
+
     }
 }

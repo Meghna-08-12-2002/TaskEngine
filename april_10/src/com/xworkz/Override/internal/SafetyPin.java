@@ -10,11 +10,9 @@ public class SafetyPin extends Pin {
         System.out.println("Using a safety pin");
     }
 
-    public void lock(Pin pin) {
-        if (pin != null) {
+    public void lock() {
+
             System.out.println("Locking the safety pin securely");
-        } else {
-            System.out.println("Cannot lock, pin is missing");
-        }
+
     }
 }

@@ -10,11 +10,9 @@ public class FlavoredCurd extends Curd {
         System.out.println("Eating flavored curd");
     }
 
-    public void chill(Curd curd) {
-        if (curd != null) {
+    public void chill() {
+
             System.out.println("Chilling the curd before serving");
-        } else {
-            System.out.println("Curd is null, cannot chill");
-        }
+
     }
 }

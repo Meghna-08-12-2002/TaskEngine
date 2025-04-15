@@ -10,11 +10,9 @@ public class MechanicalKeyboard extends Keyboard {
         System.out.println("Typing with a mechanical keyboard");
     }
 
-    public void backlight(Keyboard keyboard) {
-        if (keyboard != null) {
+    public void backlight() {
+
             System.out.println("Backlight is enabled on the keyboard");
-        } else {
-            System.out.println("Keyboard is null, can't enable backlight");
-        }
+
     }
 }

@@ -10,11 +10,9 @@ public class SmartElevator extends Elevator {
         System.out.println("Smart Elevator is moving with voice command");
     }
 
-    public void autoClose(Elevator elevator) {
-        if (elevator != null) {
+    public void autoClose() {
+
             System.out.println("Smart elevator doors will auto close in 5 seconds");
-        } else {
-            System.out.println("Elevator is null, can't auto close doors");
-        }
+
     }
 }

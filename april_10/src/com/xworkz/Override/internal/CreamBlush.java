@@ -10,11 +10,9 @@ public class CreamBlush extends Blush {
         System.out.println("Applying cream blush");
     }
 
-    public void blend(Blush blush) {
-        if (blush != null) {
+    public void blend() {
+
             System.out.println("Blending the blush smoothly");
-        } else {
-            System.out.println("Blush is null, can't blend");
-        }
+
     }
 }

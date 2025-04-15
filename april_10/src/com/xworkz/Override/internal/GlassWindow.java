@@ -10,11 +10,9 @@ public class GlassWindow extends Window {
         System.out.println("Glass window is open");
     }
 
-    public void clean(Window window) {
-        if (window != null) {
+    public void clean() {
+
             System.out.println("Cleaning the glass window");
-        } else {
-            System.out.println("Window is null, cannot clean");
-        }
+
     }
 }

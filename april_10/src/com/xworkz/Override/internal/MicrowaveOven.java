@@ -10,11 +10,9 @@ public class MicrowaveOven extends Oven {
         System.out.println("Quick heating using microwave technology");
     }
 
-    public void defrost(Oven oven) {
-        if (oven != null) {
+    public void defrost() {
+
             System.out.println("Defrosting using microwave oven");
-        } else {
-            System.out.println("Oven is null, cannot defrost");
-        }
+
     }
 }

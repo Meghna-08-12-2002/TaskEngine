@@ -10,11 +10,9 @@ public class StiffNeck extends Neck{
         System.out.println("Trying to bend the stiff neck");
     }
 
-    public void massage(Neck neck) {
-        if (neck != null) {
+    public void massage() {
+
             System.out.println("Massaging the neck");
-        } else {
-            System.out.println("Neck is null, can't massage");
-        }
+
     }
 }
