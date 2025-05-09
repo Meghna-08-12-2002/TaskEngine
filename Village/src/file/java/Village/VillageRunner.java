@@ -7,4 +7,12 @@ public class VillageRunner {
         Village village = new Village("belur", "Shridevi", 12, new Water[]{water1, water2});
         village.displayDetails();
     }
+
+
+
+
+
+
+
+
 }

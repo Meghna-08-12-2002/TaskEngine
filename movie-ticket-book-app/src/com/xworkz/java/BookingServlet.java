@@ -13,7 +13,7 @@ public class BookingServlet extends GenericServlet {
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        // Get form parameters
+
         String name = servletRequest.getParameter("name");
         String contactnumber = servletRequest.getParameter("contactnumber");
         long c_number = 0;
