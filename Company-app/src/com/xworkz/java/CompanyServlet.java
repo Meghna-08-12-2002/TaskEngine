@@ -23,6 +23,7 @@ public class CompanyServlet extends GenericServlet {
         response.setContentType("text/html");
         PrintWriter writer = response.getWriter();
         System.out.println("<html><body>");
+        out.println("<h1>Thank you for Booking"!</h1>");
         System.out.println("<h1>Employee Details</h1>");
         System.out.println("<p>Name: " + empName + "</p>");
         System.out.println("<p>ID: " + empId + "</p>");

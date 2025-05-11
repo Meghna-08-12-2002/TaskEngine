@@ -13,36 +13,40 @@ public class BookingServlet extends GenericServlet {
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
+        System.out.println("running service in MovieBookingServlet");
 
-        String name = servletRequest.getParameter("name");
-        String contactnumber = servletRequest.getParameter("contactnumber");
-        long c_number = 0;
+        String name=servletRequest.getParameter("name");
 
-        if (contactnumber != null && contactnumber=="") {
-            c_number = Long.parseLong(contactnumber);
+        String contactNumber=servletRequest.getParameter("contactnumber");
+        long contact=0L;
+        if(contactNumber!=null && contactNumber!=""){
+            contact=Long.parseLong(contactNumber);
         }
 
-        String moviename = servletRequest.getParameter("moviename");
-        String ticketprice = servletRequest.getParameter("ticketprice");
-        int t_price = 0;
+        String moviename=servletRequest.getParameter("moviename");
 
-        if (ticketprice != null && ticketprice=="") {
-            t_price = Integer.parseInt(ticketprice);
+        String tprice=servletRequest.getParameter("ticketprice");
+        int price=0;
+        if(tprice!=null && tprice!=""){
+            price=Integer.parseInt(tprice);
+
         }
 
-        String numberoftickets = servletRequest.getParameter("numberoftickets");
-        int num_tickets = 0;
-
-        if (numberoftickets != null && numberoftickets=="") {
-            num_tickets = Integer.parseInt(numberoftickets);
+        String numofTickets=servletRequest.getParameter("numberoftickets");
+        int tickets=0;
+        if(numofTickets!=null && numofTickets!=""){
+            tickets=Integer.parseInt(numofTickets);
         }
 
-        int payableamount = t_price * num_tickets;
-        PrintWriter out = servletResponse.getWriter();
+
+
+        long payableAmount=price*tickets;
+
         servletResponse.setContentType("text/html");
-        out.println("<html><body>");
-        out.println("<h1>Thank you for Booking, " + name + "!</h1>");
-        out.println("<h2>Total Price: " + payableamount + "</h2>");
-        out.println("</body></html>");
+        PrintWriter writer= servletResponse.getWriter();
+
+        writer.println("<h1> Thanks for booking a movie </h1>");
+        writer.println("<h2> Your payable Amount is</h2>"+payableAmount);
+
     }
 }
