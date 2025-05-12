@@ -23,6 +23,9 @@ public class AppointmentServlet extends GenericServlet {
 
         String email=servletRequest.getParameter("email");
 
+        String message=servletRequest.getParameter("message");
+
+
         String age=servletRequest.getParameter("age");
 
         String gender=servletRequest.getParameter("gender");
@@ -40,5 +43,15 @@ public class AppointmentServlet extends GenericServlet {
         PrintWriter writer= servletResponse.getWriter();
 
         writer.println("<h1> Thanks for booking a slot </h1>");
+        writer.println("firstname:"+firstname+"<br><br>");
+        writer.println("lastname:"+lastname+"<br><br>");
+        writer.println("email:"+email+"<br><br>");
+        writer.println("message:"+message+"<br><br>");
+        writer.println("age:"+age+"<br><br>");
+        writer.println("gender:"+gender+"<br><br>");
+        writer.println("address:"+address+"<br><br>");
+        writer.println("sicknes:"+sickness+"<br><br>");
+        writer.println("mobileno:"+mobileno+"<br><br>");
+
     }
 }

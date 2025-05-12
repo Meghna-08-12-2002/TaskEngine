@@ -11,6 +11,7 @@ import java.io.PrintWriter;
 @WebServlet(urlPatterns = "/contact",loadOnStartup = 1)
 public class ContactServlet extends GenericServlet {
     public ContactServlet(){
+
         System.out.println("ContactServlet running in tomcat");
     }
 
@@ -31,6 +32,10 @@ public class ContactServlet extends GenericServlet {
         PrintWriter writer= servletResponse.getWriter();
 
         writer.println("<h1> Thanks for Contact Details </h1>");
+        System.out.println("firstname:"+firstname);
+        System.out.println("lastname:"+lastname);
+        System.out.println("email:"+email);
+        System.out.println("message:"+message);
 
     }
 }
