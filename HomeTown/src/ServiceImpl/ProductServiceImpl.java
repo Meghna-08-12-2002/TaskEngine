@@ -1,6 +1,8 @@
 package ServiceImpl;
 
 import Dto.ProductDto;
+import Repository.ProductRepository;
+import Repository.ProductRepositoryImpl;
 import Service.ProductService;
 
 public class ProductServiceImpl implements ProductService {
@@ -123,8 +125,11 @@ public class ProductServiceImpl implements ProductService {
             System.out.println("returnpolicy is invalid");
             return false;
         }
+        System.out.println("All fields are valid, saving ProductDto...");
+        ProductRepository productRepository = new ProductRepositoryImpl();
+        boolean status = productRepository.persist(productDto);
+        return status;
 
-        return true;
     }
 }
 
