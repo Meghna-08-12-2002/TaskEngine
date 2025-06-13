@@ -23,7 +23,7 @@ public class HandwashRepositoryImpl implements HandwashRepository {
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection connection = DriverManager.getConnection(url, username, password);
-                String sql = "INSERT INTO handwash VALUES (0, '" + handwashDto.getDate() + "', " + handwashDto.getCount() + ", " + handwashDto.isSoapUsed() + ", '" + handwashDto.getLocation() + "', " + handwashDto.getDuration() + ", '" + handwashDto.getRemarks() + "')";
+                String sql = "INSERT INTO handwash VALUES (0, '" + handwashDto.getDate() + "', " + handwashDto.getCount() + ", " + handwashDto.isSoapUsed() + ", '" + handwashDto.getLocation() + "', " + handwashDto.getDuration() + ", '" + handwashDto.getRemarks() + "','"+time+"')";
                 Statement statement = connection.createStatement();
                 statement.executeUpdate(sql);
             } catch (ClassNotFoundException | SQLException e) {
