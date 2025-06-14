@@ -11,7 +11,7 @@ import java.time.format.DateTimeFormatter;
 
 public class HandwashRepositoryImpl implements HandwashRepository {
     @Override
-    public boolean parser(HandwashDto handwashDto) {
+    public boolean persist(HandwashDto handwashDto) {
         System.out.println("running in the repository block");
         if (handwashDto != null) {
             String url = "jdbc:mysql://localhost:3306/java";
@@ -31,6 +31,7 @@ public class HandwashRepositoryImpl implements HandwashRepository {
             }
             return true;
         }
+        System.out.println("Details not saved");
         return false;
     }
 }

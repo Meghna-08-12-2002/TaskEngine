@@ -29,17 +29,20 @@ public class HandwashServlet extends HttpServlet {
         handwashDto.setLocation(location);
         handwashDto.setDuration(duration);
         handwashDto.setRemarks(remarks);
+
         HandwashServiceImpl handwashService=new HandwashServiceImpl();
         boolean saved=handwashService.save(handwashDto);
+        System.out.println("Result:"+saved);
+        RequestDispatcher requestDispatcher;
         if(saved){
-            System.out.println("Successfully saved the information.");
-            RequestDispatcher requestDispatcher=req.getRequestDispatcher("Sucess.jsp");
+            requestDispatcher=req.getRequestDispatcher("Sucess.jsp");
             req.setAttribute("message", "Save Success");
-            req.setAttribute("productDto", handwashDto);
-            requestDispatcher.forward(req,resp);
-
+            req.setAttribute("handwashDto", handwashDto);
         } else {
-            System.out.println(" Error in saving the information.");
+            requestDispatcher=req.getRequestDispatcher("Handwash.jsp");
+            req.setAttribute("message","Details Incorrect");
+            req.setAttribute("handwashDto",handwashDto);
         }
+        requestDispatcher.forward(req,resp);
     }
 }

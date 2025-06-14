@@ -88,16 +88,17 @@
 <div class="container">
     <div class="form-container">
         <form action="handwash" method="post">
+            <p class="text-center pt-3 text-danger">${message}</p>
             <h3>Hand Wash Entry</h3>
 
             <div class="mb-3">
                 <label class="form-label">Date:</label>
-                <input type="date" name="date" class="form-control" required />
+                <input type="date" name="date" class="form-control" required value="${handwashDto.date}"/>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Count:</label>
-                <input type="number" name="count" class="form-control" required />
+                <input type="number" name="count" class="form-control" required value="${handwashDto.count}"/>
             </div>
 
             <div class="mb-3">
@@ -110,17 +111,17 @@
 
             <div class="mb-3">
                 <label class="form-label">Location:</label>
-                <input type="text" name="location" class="form-control" required />
+                <input type="text" name="location" class="form-control" required value="${handwashDto.location}"/>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Duration (sec):</label>
-                <input type="number" name="duration" class="form-control" required />
+                <input type="number" name="duration" class="form-control" required value="${handwashDto.duration}"/>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Remarks:</label>
-                <input type="text" name="remarks" class="form-control" />
+                <input type="text" name="remarks" class="form-control" required value="${handwashDto.remarks}"/>
             </div>
 
             <button type="submit" class="btn btn-custom w-100">Submit</button>
