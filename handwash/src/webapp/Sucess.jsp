@@ -24,7 +24,7 @@
 </head>
 <body>
 <h2>Hand Wash details saved successfully!</h2>
-<a href="Handwash.jsp">Add another record</a>
+<a href="handwash.jsp">Add another record</a>
 <p class="text-center pt-3 text-success">${message}</p>
 <div
         class="container d-flex justify-content-center align-items-center mt-3 w-50"

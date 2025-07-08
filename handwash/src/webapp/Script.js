@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Handwash Form</title>
   <style>
-    .error {
+    .error {''
       color: red;
       font-size: 0.9em;
       display: block;

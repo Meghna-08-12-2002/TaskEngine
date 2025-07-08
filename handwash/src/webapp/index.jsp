@@ -70,7 +70,7 @@
                     <a class="nav-link active" href="index.jsp">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Handwash Form</a>
+                    <a class="btn btn-custom" href="pages/handwash.jsp" role="button">Handwash Details</a>
                 </li>
             </ul>
         </div>
@@ -81,7 +81,7 @@
 <div class="container text-center">
     <h1>Welcome to the handwash Report Web Application</h1>
     <div class="center-button">
-        <a class="btn btn-custom" href="Handwash.jsp" role="button">Handwash Details</a>
+        <a class="btn btn-custom" href="handwash.jsp" role="button">Handwash Details</a>
     </div>
 </div>
 
