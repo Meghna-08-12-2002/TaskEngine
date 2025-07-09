@@ -4,6 +4,7 @@ import com.xworkz.person.dto.PersonDto;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class PersonRunner {
 
@@ -72,5 +73,11 @@ public class PersonRunner {
 
         System.out.println("Values");
         map.values().forEach(System.out::println);
+
+        Set<Map.Entry<PersonDto, String>> entrySet = map.entrySet();
+
+        entrySet.forEach(e->{
+            System.out.println("key"+e.getKey()+"value"+e.getValue());
+        });
     }
 }
