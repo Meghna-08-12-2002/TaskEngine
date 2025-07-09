@@ -5,6 +5,7 @@ import com.xworkz.java.dto.ComputerDto;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class ComputerRunner {
     public static void main(String[] args) {
@@ -73,5 +74,14 @@ public class ComputerRunner {
 
         System.out.println(" All Brand Values:");
         map.values().forEach(System.out::println);
+
+        Set<Map.Entry<ComputerDto, BrandDto>> entrySet=map.entrySet();
+        entrySet.forEach(e->{
+            ComputerDto computerDto=e.getKey();
+            BrandDto brandDto=e.getValue();
+            System.out.println(computerDto);
+            System.out.println(brandDto);
+        });
+
     }
 }

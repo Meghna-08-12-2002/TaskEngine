@@ -4,6 +4,7 @@ import com.xworkz.java.dto.FoodDto;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class FoodRunner {
     public static void main(String[] args) {
@@ -134,10 +135,13 @@ public class FoodRunner {
         f25.put("Main", "Potato");
         foodMap.put(new FoodDto("Manchurian", "Chinese"), f25);
 
-        System.out.println("----- 🍽 Food Map Entries -----");
-        for (Map.Entry<FoodDto, Map<String, String>> entry : foodMap.entrySet()) {
-            System.out.println(entry.getKey() + " => " + entry.getValue());
-        }
-
+        System.out.println("----- Food Map Entries -----");
+        Set<Map.Entry<FoodDto, Map<String, String>>> entrySet = foodMap.entrySet();
+        entrySet.forEach(e -> {
+            FoodDto food = e.getKey();
+            Map<String, String> info = e.getValue();
+            System.out.println(food);
+            System.out.println(info);
+        });
     }
 }

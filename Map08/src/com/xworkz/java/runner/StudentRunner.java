@@ -2,10 +2,7 @@ package com.xworkz.java.runner;
 
 import com.xworkz.java.dto.StudentDto;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class StudentRunner {
     public static void main(String[] args) {
@@ -38,9 +35,12 @@ public class StudentRunner {
         studentMap.put(new StudentDto(125, "Bhavani"), Arrays.asList("Medical Ethics", "Anatomy", "Pharmacology"));
 
 
-        System.out.println("------ Student Map Entries (Key => List<String>) ------");
-        for (Map.Entry<StudentDto, List<String>> entry : studentMap.entrySet()) {
-            System.out.println(entry.getKey() + " => " + entry.getValue());
-        }
+        Set<Map.Entry<StudentDto, List<String>>> entrySet = studentMap.entrySet();
+        entrySet.forEach(e -> {
+            StudentDto student = e.getKey();
+            List<String> subjects = e.getValue();
+            System.out.println(student);
+            System.out.println(subjects);
+        });
     }
 }

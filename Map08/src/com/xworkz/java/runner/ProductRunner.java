@@ -91,15 +91,14 @@ public class ProductRunner {
         map.put(productDto24,vendorDto24);
         map.put(productDto25,vendorDto25);
 
-    //    System.out.println("Keys");
-      //  map.keySet().forEach(System.out::println);
-        //System.out.println("Values");
-        //map.values().forEach(System.out::println);
         Set<Map.Entry<ProductDto, VendorDto>> entrySet = map.entrySet();
 
-        entrySet.forEach(e -> {
-            System.out.println("Key -> " + e.getKey()+ ", Type: " + e.getKey() + ", Value -> " + e.getValue());
-        });
 
+        entrySet.forEach(e->{
+            ProductDto productDto=e.getKey();
+            VendorDto vendorDto=e.getValue();
+            System.out.println(productDto);
+            System.out.println(vendorDto);
+        });
     }
 }

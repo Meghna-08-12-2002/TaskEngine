@@ -2,10 +2,7 @@ package com.xworkz.java.runner;
 
 import com.xworkz.java.dto.CompanyDto;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class CompanyRunner {
     public static void main(String[] args) {
@@ -68,6 +65,14 @@ public class CompanyRunner {
 
         System.out.println("Employee Name Lists:");
         map.values().forEach(System.out::println);
+
+        Set<Map.Entry<CompanyDto, List<String>>> entrySet = map.entrySet();
+        entrySet.forEach(entry -> {
+            CompanyDto company = entry.getKey();
+            List<String> employees = entry.getValue();
+            System.out.println(company);
+            System.out.println(employees);
+        });
     }
 
 }

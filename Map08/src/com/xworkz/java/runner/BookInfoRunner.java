@@ -4,10 +4,7 @@ import com.xworkz.java.dto.AuthorDto;
 import com.xworkz.java.dto.BookInfoDto;
 
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class BookInfoRunner {
     public static void main(String[] args) {
@@ -114,11 +111,12 @@ public class BookInfoRunner {
         map.put(book24, book24.getAuthors());
         map.put(book25, book25.getAuthors());
 
-        System.out.println("----- Book Info Map Entries -----");
-        for (Map.Entry<BookInfoDto, List<AuthorDto>> entry : map.entrySet()) {
-            System.out.println(entry.getKey());
-            entry.getValue().forEach(System.out::println);
-            System.out.println();
-        }
+        Set<Map.Entry<BookInfoDto, List<AuthorDto>>> entrySet = map.entrySet();
+        entrySet.forEach(e -> {
+            BookInfoDto book = e.getKey();
+            List<AuthorDto> authors = e.getValue();
+            System.out.println(book);
+            System.out.println(authors);
+        });
     }
 }
