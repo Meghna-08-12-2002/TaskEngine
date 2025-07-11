@@ -60,7 +60,7 @@ public class PresidentDto {
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof PresidentDto) {
-             PresidentDto other = (PresidentDto) obj;
+            PresidentDto other = (PresidentDto) obj;
             return this.party.equals(other.party);
         }
         return false;
