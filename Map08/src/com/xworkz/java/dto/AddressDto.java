@@ -1,5 +1,7 @@
 package com.xworkz.java.dto;
 
+import java.util.Objects;
+
 public class AddressDto {
     private int id;
     private String street;
@@ -55,4 +57,17 @@ public class AddressDto {
         this.pincode = pincode;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof AddressDto) {
+            AddressDto cast=(AddressDto) obj;
+            return this.street.equals(cast.street);
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 }
