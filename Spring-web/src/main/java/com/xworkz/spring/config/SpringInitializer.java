@@ -18,7 +18,7 @@ public SpringInitializer(){
     protected Class<?>[] getServletConfigClasses() {
         System.out.println("running getServletConfigClasses");
 
-        return new Class[]{SpringConfiguration.class};
+        return new Class[]{SpringConfiguration.class,InstancesConfiguration.class};
     }
 
     @Override
