@@ -1,5 +1,6 @@
 package com.xworkz.name.controller;
 
+import com.xworkz.name.dto.NameDTO;
 import org.springframework.stereotype.Component;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,15 +13,11 @@ public class NameController {
         System.out.println("running in NameController");
     }
     @RequestMapping("/save")
-    public String onSave(@RequestParam String firstName, @RequestParam String middleName, @RequestParam String lastName, Model model){
+    public String onSave(NameDTO nameDTO,Model model){
         System.out.println("onSave in NameController");
         System.out.println("running on onSave");
-        model.addAttribute("firstName", firstName);
-        model.addAttribute("middleName", middleName);
-        model.addAttribute("lastName", lastName);
-        System.out.println("First Name: " + firstName);
-        System.out.println("Middle Name: " + middleName);
-        System.out.println("Last Name: " + lastName);
+        System.out.println(nameDTO);
+        model.addAttribute("nameDTo",nameDTO);
         return "NameResult.jsp";
     }
 }
